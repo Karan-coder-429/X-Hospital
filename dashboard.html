@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>X‑Hospital — Smart Dashboard</title>
+  <style>
+    /* ---------- RESET ---------- */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#e9f3ff 0%, #f7fbff 100%);
+      color:#023047;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.4;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .app { display:flex; min-height:100vh; }
+
+    /* SIDEBAR */
+    .sidebar {
+      width:260px;
+      background: linear-gradient(180deg,#014f86,#0077b6);
+      color:#fff;
+      padding:28px 18px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      box-shadow: 6px 0 20px rgba(2,20,40,0.08);
+      position:relative;
+    }
+    .brand {font-weight:700;font-size:1.35rem;text-align:center; margin-bottom:6px}
+    .sidebar .tag {font-size:0.85rem;opacity:0.9;text-align:center}
+
+    .nav { display:flex;flex-direction:column;gap:6px;margin-top:8px; }
+    .nav button {
+      background:transparent;border:0;color:#e6f7ff;text-align:left;padding:10px;border-radius:8px;cursor:pointer;
+      transition:all 180ms ease;font-size:0.98rem;display:flex;gap:10px;align-items:center;
+    }
+    .nav button:hover{background:rgba(255,255,255,0.06)}
+    .nav button.active{background:rgba(0,0,0,0.12)}
+
+    .sidebar .footer-note{font-size:0.82rem;opacity:0.9;margin-top:auto;text-align:center}
+
+    /* MAIN */
+    .main { flex:1;padding:28px; }
+
+    /* TOPBAR */
+    .topbar {
+      display:flex;gap:12px;align-items:center;margin-bottom:18px;
+      position:sticky;top:0;z-index:10;background:transparent;padding-bottom:12px;
+    }
+    .search { flex:1;display:flex;gap:8px;align-items:center; }
+    .search input[type=text]{
+      flex:1;padding:12px 14px;border-radius:10px;border:1px solid rgba(2,20,40,0.08);
+      box-shadow:0 4px 18px rgba(2,20,40,0.04);
+      font-size:0.95rem;background:white;
+    }
+    .search button{
+      padding:10px 14px;border-radius:10px;border:0;background:#0077b6;color:white;cursor:pointer;
+      box-shadow:0 6px 18px rgba(0,119,182,0.18);
+      transition:transform 150ms ease;
+    }
+    .search button:active{transform:translateY(1px)}
+
+    /* GRID & CARDS */
+    .grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:18px; align-items:start; }
+    .card {
+      background:white;padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,20,40,0.06);
+      transition: transform 180ms ease;
+    }
+    .card:hover{transform: translateY(-6px)}
+    .card h3{margin-bottom:10px;color:#023047}
+    .muted{color:#5b6b76;font-size:0.95rem}
+
+    .full {grid-column: 1 / -1}
+    .actions {display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    .btn {background:#0077b6;color:white;padding:10px 14px;border-radius:10px;border:0;cursor:pointer}
+    .btn.ghost {background:transparent;color:#0077b6;border:1px solid rgba(0,119,182,0.12)}
+    .btn.warn {background:#ff7b00}
+
+    .output {
+      margin-top:12px;padding:12px;border-radius:8px;background:linear-gradient(180deg,#f3fbff,#eef9ff);
+      border-left:4px solid #0077b6;color:#023047;font-size:0.95rem;
+    }
+
+    /* New styles for formatted outputs */
+    .result-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+    .result-card { background: #fff; padding: 12px; border-radius: 8px; box-shadow: 0 4px 12px rgba(2,20,40,0.04); }
+    .result-card h4 { font-size: 1rem; margin-bottom: 6px; color: #004f86; }
+    .result-card p { font-size: 0.9rem; margin-bottom: 4px; color: #023047; }
+    .result-section { margin-bottom: 12px; }
+
+    label{display:block;font-size:0.85rem;margin-bottom:6px;color:#2b3b43}
+    input[type=text],input[type=email],input[type=tel], select, textarea {
+      width:100%;padding:10px;border-radius:8px;border:1px solid #d7e7f8;background:white;font-size:0.95rem;
+    }
+    textarea{min-height:100px;resize:vertical}
+
+    .modal {
+      position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,20,40,0.5);z-index:999;
+      padding:20px;
+    }
+    .modal.show{display:flex}
+    .modal-card {
+      width:100%;max-width:520px;background:white;border-radius:14px;padding:20px;box-shadow:0 20px 60px rgba(2,20,40,0.25);
+      transform:translateY(-10px);animation:pop 240ms ease forwards;
+    }
+    @keyframes pop {to{transform:none}}
+
+    .modal-head {display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+    .modal-head h4{font-size:1.15rem;color:#004f86}
+    .modal-close {background:transparent;border:0;font-size:1.1rem;cursor:pointer;color:#6b7780}
+
+    .form-row {display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .form-row.single {grid-template-columns:1fr}
+    .small-note{font-size:0.84rem;color:#61707a;margin-top:6px}
+
+    .spinner {
+      width:36px;height:36px;border-radius:50%;border:4px solid #d9eaf8;border-top-color:#0077b6;animation:spin 0.9s linear infinite;margin:auto;
+    }
+    @keyframes spin {to{transform:rotate(360deg)}}
+
+    @media (max-width:980px){
+      .grid{grid-template-columns:1fr}
+      .sidebar{width:100%;flex-direction:row;gap:12px;align-items:center;padding:14px}
+      .brand{font-size:1rem}
+      .nav{flex-direction:row;gap:6px;overflow:auto}
+      .nav button{white-space:nowrap;padding:8px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="Sidebar">
+    <div class="brand">🏥 X‑Hospital</div>
+    <div class="tag">Smart Healthcare Dashboard</div>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <button onclick="go('home')" id="nav-home">🏠 Home</button>
+      <button onclick="go('recommend')" id="nav-recommend">🤖 Recommendation</button>
+      <button onclick="go('doctor')" id="nav-doctor">🧑‍⚕️ Get Doctor</button>
+      <button onclick="go('add-doctor')" id="nav-add-doctor">➕ Add Doctor</button>
+      <button onclick="toggleAbout()" id="nav-about">ℹ️ About</button>
+    </nav>
+    <div class="footer-note">Built for college project • 2025</div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main" id="main">
+    <!-- TOPBAR / SEARCH -->
+    <div class="topbar" id="home">
+      <div class="search" role="search">
+        <input type="text" id="searchInput" placeholder="Search symptoms, doctors, services..." aria-label="Search input"/>
+        <button class="btn" id="searchBtn">🔎 Search</button>
+      </div>
+      <div style="min-width:140px;display:flex;gap:8px;justify-content:flex-end;">
+        <button class="btn ghost" id="openRec">Open Recommender</button>
+        <button class="btn ghost" id="openDoc">Find Doctor</button>
+        <button class="btn warn" id="emergencyBtn">🚨 Emergency</button>
+      </div>
+    </div>
+
+    <!-- GRID -->
+    <section class="grid" aria-live="polite">
+      <!-- Recommender Card -->
+      <article class="card" id="card-recommend">
+        <h3>🤖 Recommendation Engine</h3>
+        <p class="muted">Use AI model to get recommended treatment or department based on illness and location.</p>
+        <div class="actions">
+          <button class="btn" id="recBtnOpen">Open Form</button>
+          <button class="btn ghost" id="recExample">Example Input</button>
+        </div>
+        <div id="recommendOutput" class="output" style="display:none"></div>
+      </article>
+
+      <!-- Doctor Finder Card -->
+      <article class="card" id="card-doctor">
+        <h3>🧑‍⚕️ Get Doctor</h3>
+        <p class="muted">Search nearest or recommended doctors for the specified illness and location.</p>
+        <div class="actions">
+          <button class="btn" id="docBtnOpen">Open Form</button>
+          <button class="btn ghost" id="docExample">Example Input</button>
+        </div>
+        <div id="doctorOutput" class="output" style="display:none"></div>
+      </article>
+
+      <!-- Add Doctor Card -->
+      <article class="card" id="card-add-doctor">
+        <h3>➕ Add Doctor</h3>
+        <p class="muted">Register a new doctor with details like name, hospital, specialization, and contact info.</p>
+        <div class="actions">
+          <button class="btn" id="addDocBtnOpen">Open Form</button>
+          <button class="btn ghost" id="addDocExample">Example Input</button>
+        </div>
+        <div id="addDoctorOutput" class="output" style="display:none"></div>
+      </article>
+    </section>
+  </main>
+</div>
+
+<!-- ---------- MODALS ---------- -->
+<!-- Recommendation Modal -->
+<div class="modal" id="modalRec" role="dialog" aria-modal="true" aria-labelledby="recTitle">
+  <div class="modal-card" role="document">
+    <div class="modal-head">
+      <h4 id="recTitle">🧠 Recommendation Form</h4>
+      <button class="modal-close" onclick="closeModal('modalRec')" aria-label="Close">✕</button>
+    </div>
+    <form id="formRec" onsubmit="handleRec(event)">
+      <div class="form-row single">
+        <label for="recIllness">Illness / Symptoms</label>
+        <input id="recIllness" name="illness" type="text" placeholder="e.g. fever, cough, chest pain" required>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="recState">State</label>
+          <input id="recState" name="state" type="text" placeholder="e.g. Maharashtra" required>
+        </div>
+        <div>
+          <label for="recCity">City (Optional)</label>
+          <input id="recCity" name="city" type="text" placeholder="e.g. Mumbai">
+        </div>
+      </div>
+      <div style="margin-top:8px;display:flex;gap:10px;align-items:center">
+        <button class="btn" type="submit">Get Recommendation</button>
+        <button type="button" class="btn close-btn ghost" onclick="closeModal('modalRec')">Cancel</button>
+        <div id="recSpinner" style="margin-left:auto;display:none"><div class="spinner"></div></div>
+      </div>
+      <p class="small-note">Tip: fill illness and location to get localized recommendation from model.</p>
+    </form>
+  </div>
+</div>
+
+<!-- Doctor Modal -->
+<div class="modal" id="modalDoc" role="dialog" aria-modal="true" aria-labelledby="docTitle">
+  <div class="modal-card" role="document">
+    <div class="modal-head">
+      <h4 id="docTitle">👨‍⚕️ Find a Doctor</h4>
+      <button class="modal-close" onclick="closeModal('modalDoc')" aria-label="Close">✕</button>
+    </div>
+    <form id="formDoc" onsubmit="handleDoc(event)">
+      <div class="form-row single">
+        <label for="docIllness">Illness / Specialty</label>
+        <input id="docIllness" name="illness" type="text" placeholder="e.g. cardiology, covid, fever" required>
+      </div>
+      <div class="form-row single">
+        <label for="docCity">City</label>
+        <input id="docCity" name="city" type="text" placeholder="e.g. Mumbai" required>
+      </div>
+      <div style="margin-top:8px;display:flex;gap:10px;align-items:center">
+        <button class="btn" type="submit">Search Doctors</button>
+        <button type="button" class="btn close-btn ghost" onclick="closeModal('modalDoc')">Cancel</button>
+        <div id="docSpinner" style="margin-left:auto;display:none"><div class="spinner"></div></div>
+      </div>
+      <p class="small-note">Tip: enter illness and city to find doctors.</p>
+    </form>
+  </div>
+</div>
+
+<!-- Add Doctor Modal -->
+<div class="modal" id="modalAddDoc" role="dialog" aria-modal="true" aria-labelledby="addDocTitle">
+  <div class="modal-card" role="document">
+    <div class="modal-head">
+      <h4 id="addDocTitle">➕ Add a Doctor</h4>
+      <button class="modal-close" onclick="closeModal('modalAddDoc')" aria-label="Close">✕</button>
+    </div>
+    <form id="formAddDoc" onsubmit="handleAddDoc(event)">
+      <div class="form-row single">
+        <label for="addDocName">Doctor Name</label>
+        <input id="addDocName" name="doctor_name" type="text" placeholder="e.g. rakesh mishra" required>
+      </div>
+      <div class="form-row single">
+        <label for="addDocHospital">Hospital Name</label>
+        <input id="addDocHospital" name="hospital" type="text" placeholder="e.g. Apollo Hospital" required>
+      </div>
+      <div class="form-row single">
+        <label for="addDocSpecialization">Specialization</label>
+        <input id="addDocSpecialization" name="specialization" type="text" placeholder="e.g. Cardiology" required>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="addDocMobile">Mobile Number</label>
+          <input id="addDocMobile" name="mobile" type="tel" placeholder="e.g. +91 9876543210" pattern="\+?[0-9]{10,12}" required>
+        </div>
+        <div>
+          <label for="addDocEmail">Email</label>
+          <input id="addDocEmail" name="email" type="email" placeholder="e.g. doctor@example.com" required>
+        </div>
+      </div>
+      <div style="margin-top:8px;display:flex;gap:10px;align-items:center">
+        <button class="btn" type="submit">Add Doctor</button>
+        <button type="button" class="btn close-btn ghost" onclick="closeModal('modalAddDoc')">Cancel</button>
+        <div id="addDocSpinner" style="margin-left:auto;display:none"><div class="spinner"></div></div>
+      </div>
+      <p class="small-note">Tip: ensure all fields are filled correctly to register the doctor.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+  const API_BASE = "http://127.0.0.1:8000";
+  function $(id){return document.getElementById(id)}
+  function show(el){el.style.display='';}
+  function hide(el){el.style.display='none';}
+
+  /* ---------------- NAVIGATION ---------------- */
+  function go(sectionId){
+    const sections = { home:'home', recommend:'card-recommend', doctor:'card-doctor', 'add-doctor':'card-add-doctor' };
+    const targetId = sections[sectionId] || sectionId;
+    const el = document.getElementById(targetId) || document.getElementById(sectionId);
+    if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    setActiveNav(`nav-${sectionId}`);
+  }
+  function setActiveNav(id){
+    document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+    const el=$(id); if(el) el.classList.add('active');
+  }
+
+  /* ---------------- MODAL CONTROL ---------------- */
+  function openModal(id){ $(id).classList.add('show'); $(id).querySelector('input, select').focus(); }
+  function closeModal(id){ $(id).classList.remove('show'); $(id).querySelector('form').reset(); }
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape'){ closeModal('modalRec'); closeModal('modalDoc'); closeModal('modalAddDoc'); }});
+  document.querySelectorAll('.modal').forEach(m=>{ m.addEventListener('click',(ev)=>{ if(ev.target===m) closeModal(m.id); }); });
+
+  /* ---------------- SEARCH / EMERGENCY ---------------- */
+  $('searchBtn').addEventListener('click', async ()=>{
+    const q = $('searchInput').value.trim(); 
+    if(!q){ alert('Please enter a search term'); return; }
+
+    try {
+      const fd = new FormData();
+      fd.append("query", q);   
+      const res = await fetch(`${API_BASE}/search`, { method:'POST', body:fd });
+      if(!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || `HTTP ${res.status}`);
+      }
+      const data = await res.json();
+      const output = $('doctorOutput');
+      let html = '';
+      if (data.hospitals && data.hospitals.length > 0) {
+        html += '<div class="result-section"><h4>Hospitals:</h4><div class="result-grid">';
+        data.hospitals.forEach(h => {
+          html += `
+            <div class="result-card">
+              <h4>${h.hospital_name}</h4>
+              <p>Rating: ${h.rating}★</p>
+              <p>Illness: ${h.illness_type}</p>
+              <p>Address: ${h.address}, ${h.city}, ${h.state}</p>
+              <p>Mobile: ${h.mobile_number}</p>
+            </div>`;
+        });
+        html += '</div></div>';
+      }
+      if (data.doctors && data.doctors.length > 0) {
+        html += '<div class="result-section"><h4>Doctors:</h4><div class="result-grid">';
+        data.doctors.forEach(d => {
+          html += `
+            <div class="result-card">
+              <h4>${d.doctor_name}</h4>
+              <p>Specialization: ${d.specialization}</p>
+              <p>Hospital: ${d.hospital_name}</p>
+            </div>`;
+        });
+        html += '</div></div>';
+      }
+      if (!data.hospitals && !data.doctors) {
+        html = `<div class="result-card"><p>${data.error || 'No results found.'}</p></div>`;
+      }
+      output.innerHTML = html;
+      show(output);
+    } catch(err){ alert(`Search Error: ${err.message}`); console.error(err); }
+  });
+
+  $('emergencyBtn').addEventListener('click', ()=>{ 
+    alert('Emergency Services Contacted!\nCall: +91-108\nLocal Hospital Emergency: +91-1234567890'); 
+  });
+
+  /* ---------------- OPEN MODALS ---------------- */
+  $('openRec').addEventListener('click', ()=>{openModal('modalRec'); setActiveNav('nav-recommend');});
+  $('recBtnOpen').addEventListener('click', ()=>{openModal('modalRec'); setActiveNav('nav-recommend');});
+  $('recExample').addEventListener('click', ()=>{
+    $('recIllness').value='fever and sore throat'; $('recState').value='Maharashtra'; $('recCity').value='Mumbai';
+    openModal('modalRec'); setActiveNav('nav-recommend');
+  });
+  $('openDoc').addEventListener('click', ()=>{openModal('modalDoc'); setActiveNav('nav-doctor');});
+  $('docBtnOpen').addEventListener('click', ()=>{openModal('modalDoc'); setActiveNav('nav-doctor');});
+  $('docExample').addEventListener('click', ()=>{
+    $('docIllness').value='cardiology'; $('docCity').value='Bangalore';
+    openModal('modalDoc'); setActiveNav('nav-doctor');
+  });
+  $('addDocBtnOpen').addEventListener('click', ()=>{openModal('modalAddDoc'); setActiveNav('nav-add-doctor');});
+  $('addDocExample').addEventListener('click', ()=>{
+    $('addDocName').value='Dr. Jane Doe'; $('addDocHospital').value='Fortis'; $('addDocSpecialization').value='Neurology';
+    $('addDocMobile').value='+919876543210'; $('addDocEmail').value='jane@hospital.com';
+    openModal('modalAddDoc'); setActiveNav('nav-add-doctor');
+  });
+  
+
+  /* ---------------- FORM HANDLERS ---------------- */
+  async function handleRec(e){
+    e.preventDefault();
+    const spinner=$('recSpinner'); show(spinner); hide($('recommendOutput'));
+    const fd = new FormData(e.target);
+    try {
+      const res = await fetch(`${API_BASE}/recommend`, { method:'POST', body:fd });
+      if(!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || `HTTP ${res.status}`);
+      }
+      const data = await res.json();
+      const output = $('recommendOutput');
+      let html = '';
+      if (data.error) {
+        html = `<div class="result-card"><p>${data.error}</p></div>`;
+      } else {
+        html = `
+          <div class="result-card">
+            <h4>${data.hospital_name}</h4>
+            <p>Rating: ${data.rating}★</p>
+            <p>Illness: ${data.illness_type}</p>
+            <p>Address: ${data.address}, ${data.city}, ${data.state}</p>
+            <p>Mobile: ${data.mobile_number}</p>
+          </div>`;
+      }
+      output.innerHTML = html;
+      show(output);
+    } catch(err){ alert(`Recommendation Error: ${err.message}`); console.error(err); }
+    hide(spinner);
+  }
+
+  async function handleDoc(e){
+    e.preventDefault();
+    const spinner=$('docSpinner'); show(spinner); hide($('doctorOutput'));
+    const fd = new FormData(e.target);
+    try {
+      const res = await fetch(`${API_BASE}/get_doctor`, { method:'POST', body:fd });
+      if(!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || `HTTP ${res.status}`);
+      }
+      const data = await res.json();
+      const output = $('doctorOutput');
+      let html = '';
+      if (data.error) {
+        html = `<div class="result-card"><p>${data.error}</p></div>`;
+      } else {
+        html = '<div class="result-grid">';
+        data.doctors.forEach(d => {
+          html += `
+            <div class="result-card">
+              <h4>${d.doctor_name}</h4>
+              <p>Specialization: ${d.specialization}</p>
+              <p>Hospital: ${d.hospital_name}</p>
+              <p>City: ${d.city}</p>
+              <p>Mobile: ${d.mobile_number}</p>
+              <p>Email: ${d.email}</p>
+              <p>License: ${d.license_id}</p>
+            </div>`;
+        });
+        html += '</div>';
+      }
+      output.innerHTML = html;
+      show(output);
+    } catch(err){ alert(`Doctor Error: ${err.message}`); console.error(err); }
+    hide(spinner);
+  }
+
+  async function handleAddDoc(e){
+    e.preventDefault();
+    const spinner=$('addDocSpinner'); show(spinner); hide($('addDoctorOutput'));
+    const fd = new FormData(e.target);
+    try {
+      const res = await fetch(`${API_BASE}/add_doctor`, { method:'POST', body:fd });
+      if(!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || `HTTP ${res.status}`);
+      }
+      const data = await res.json();
+      const output = $('addDoctorOutput');
+      let html = '';
+      if (data.message) {
+        html = `<div class="result-card"><h4>Success!</h4><p>${data.message}</p></div>`;
+      } else if (data.error) {
+        html = `<div class="result-card"><p>${data.error}</p></div>`;
+      } else {
+        html = `<div class="result-card"><p>${JSON.stringify(data, null, 2)}</p></div>`;
+      }
+      output.innerHTML = html;
+      show(output);
+    } catch(err){ alert(`Add Doctor Error: ${err.message}`); console.error(err); }
+    hide(spinner);
+  }
+
+  function toggleAbout() {
+    alert('About X-Hospital: Smart dashboard for healthcare recommendations and doctor management. Built by [Your Name] for college project.');
+  }
+</script>
+</body>
+</html>
