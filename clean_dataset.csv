@@ -1,0 +1,699 @@
+hospital_id,hospital_name,illness_type,mobile_number,rating,address,state,city
+H001,Sunrise Cancer Care,Cancer,9876543210,4.5,"12 MG Road, Sector 5",Maharashtra,Mumbai
+H002,Lotus Oncology Center,Cancer,9123456789,4.3,45 Nehru Nagar,Tamil Nadu,Chennai
+H003,Apex Cancer Institute,Cancer,9988776655,4.7,88 Residency Road,Karnataka,Bengaluru
+H004,Hope Oncology Hospital,Cancer,9090909090,4.2,21 Civil Lines,Uttar Pradesh,Lucknow
+H005,Phoenix Cancer Clinic,Cancer,9345678901,4.6,7 Park Street,West Bengal,Kolkata
+H006,Shakti Cancer Research,Cancer,9871234567,4.4,33 Gandhi Marg,Rajasthan,Jaipur
+H007,Nirvana Oncology Center,Cancer,9001234567,4.1,19 Patel Chowk,Gujarat,Ahmedabad
+H008,Zenith Cancer Hospital,Cancer,9012345678,4.8,56 Sector 18,Punjab,Chandigarh
+H009,Omega Cancer Institute,Cancer,9321654987,4.2,101 Ring Road,Kerala,Kochi
+H010,Triveni Oncology Hub,Cancer,9456123789,4.5,67 Station Road,Madhya Pradesh,Bhopal
+H011,Blue Ribbon Cancer Center,Cancer,9812345678,4.3,22 Tilak Road,Maharashtra,Pune
+H012,Southern Oncology Clinic,Cancer,9823456789,4.6,89 Anna Salai,Tamil Nadu,Coimbatore
+H013,Unity Cancer Hospital,Cancer,9834567890,4.4,34 MG Layout,Karnataka,Mysuru
+H014,Healing Touch Oncology,Cancer,9845678901,4.7,76 Gomti Nagar,Uttar Pradesh,Kanpur
+H015,Eastern Hope Cancer Care,Cancer,9856789012,4.2,55 Salt Lake,West Bengal,Asansol
+H016,Rajputana Cancer Institute,Cancer,9867890123,4.5,90 MI Road,Rajasthan,Udaipur
+H017,Sardar Oncology Center,Cancer,9878901234,4.3,12 Ring Road,Gujarat,Surat
+H018,Golden Leaf Cancer Hospital,Cancer,9889012345,4.6,78 Sector 22,Punjab,Amritsar
+H019,Malabar Oncology Hub,Cancer,9890123456,4.4,65 MG Road,Kerala,Thiruvananthapuram
+H020,Vindhya Cancer Clinic,Cancer,9901234567,4.7,43 MP Nagar,Madhya Pradesh,Indore
+H021,Western Oncology Center,Cancer,9912345678,4.5,11 FC Road,Maharashtra,Nagpur
+H022,Pearl Cancer Institute,Cancer,9923456789,4.3,66 Race Course,Tamil Nadu,Madurai
+H023,Kaveri Oncology Hospital,Cancer,9934567890,4.6,29 Lalbagh Road,Karnataka,Hubli
+H024,Ayodhya Cancer Care,Cancer,9945678901,4.4,88 Ram Path,Uttar Pradesh,Ayodhya
+H025,Bengal Oncology Research,Cancer,9956789012,4.7,101 Howrah Bridge,West Bengal,Howrah
+H026,Desert Bloom Oncology,Cancer,9967890123,4.3,23 C-Scheme,Rajasthan,Jodhpur
+H027,Riverfront Cancer Care,Cancer,9978901234,4.6,77 Sabarmati Road,Gujarat,Gandhinagar
+H028,Golden Temple Oncology,Cancer,9989012345,4.4,12 Heritage Street,Punjab,Patiala
+H029,Backwater Cancer Institute,Cancer,9990123456,4.7,34 Marine Drive,Kerala,Kozhikode
+H030,Vindhya Oncology Center,Cancer,9001234567,4.5,56 Rajwada Chowk,Madhya Pradesh,Gwalior
+H031,Deccan Cancer Hospital,Cancer,9012345678,4.2,89 FC Road,Maharashtra,Aurangabad
+H032,Southern Star Oncology,Cancer,9023456789,4.6,101 Gandhi Road,Tamil Nadu,Tiruchirappalli
+H033,Silicon Valley Cancer Care,Cancer,9034567890,4.4,22 Tech Park,Karnataka,Mangaluru
+H034,Ganga Oncology Clinic,Cancer,9045678901,4.7,78 River View,Uttar Pradesh,Varanasi
+H035,Eastern Horizon Cancer Hub,Cancer,9056789012,4.5,90 Hill Road,West Bengal,Darjeeling
+H036,Rajput Oncology Center,Cancer,9067890123,4.3,33 Fort Road,Rajasthan,Bikaner
+H037,Diamond Cancer Institute,Cancer,9078901234,4.6,12 GIDC Circle,Gujarat,Rajkot
+H038,Majestic Oncology Hospital,Cancer,9089012345,4.4,45 Mall Road,Punjab,Ludhiana
+H039,Coconut Grove Cancer Care,Cancer,9090123456,4.7,67 Beach Road,Kerala,Alappuzha
+H040,Malwa Cancer Clinic,Cancer,9101234567,4.5,88 MG Road,Madhya Pradesh,Jabalpur
+H041,Maratha Oncology Center,Cancer,9112345678,4.2,101 Shivaji Nagar,Maharashtra,Solapur
+H042,Kongu Cancer Institute,Cancer,9123456789,4.6,55 Textile Road,Tamil Nadu,Erode
+H043,Coastal Oncology Hub,Cancer,9134567890,4.4,76 Lighthouse Street,Karnataka,Udupi
+H044,Ram Oncology Hospital,Cancer,9145678901,4.7,21 Ayodhya Marg,Uttar Pradesh,Gorakhpur
+H045,Bardhaman Cancer Research,Cancer,9156789012,4.5,34 GT Road,West Bengal,Bardhaman
+H046,Thar Oncology Center,Cancer,9167890123,4.3,67 Sand Dunes Road,Rajasthan,Barmer
+H047,Saurashtra Cancer Clinic,Cancer,9178901234,4.6,89 Porbandar Road,Gujarat,Bhavnagar
+H048,Five Rivers Oncology,Cancer,9189012345,4.4,12 Sutlej Street,Punjab,Bathinda
+H049,Spice Coast Cancer Care,Cancer,9190123456,4.7,101 Fort Kochi,Kerala,Kannur
+H050,Chambal Oncology Hospital,Cancer,9201234567,4.5,56 Riverfront,Madhya Pradesh,Bhind
+H051,Vidarbha Oncology Center,Cancer,9212345678,4.3,12 Cotton Market,Maharashtra,Akola
+H052,Meenakshi Cancer Institute,Cancer,9223456789,4.6,45 Temple Street,Tamil Nadu,Thanjavur
+H053,Sharada Oncology Hospital,Cancer,9234567890,4.4,78 University Road,Karnataka,Belagavi
+H054,Kashi Cancer Clinic,Cancer,9245678901,4.7,101 Vishwanath Gali,Uttar Pradesh,Prayagraj
+H055,Shantiniketan Oncology,Cancer,9256789012,4.5,34 Tagore Avenue,West Bengal,Bolpur
+H056,Desert Rose Cancer Care,Cancer,9267890123,4.3,56 Palace Road,Rajasthan,Kota
+H057,Sabarmati Oncology Hub,Cancer,9278901234,4.6,89 Riverfront,Gujarat,Mehsana
+H058,Guru Nanak Cancer Center,Cancer,9289012345,4.4,12 GT Road,Punjab,Jalandhar
+H059,Alleppey Oncology Institute,Cancer,9290123456,4.7,67 Canal Road,Kerala,Alappuzha
+H060,Mahakal Cancer Hospital,Cancer,9301234567,4.5,88 Temple Marg,Madhya Pradesh,Ujjain
+H061,Konkan Cancer Clinic,Cancer,9312345678,4.2,101 Sea View,Maharashtra,Ratnagiri
+H062,Cauvery Oncology Center,Cancer,9323456789,4.6,55 Riverbank Road,Tamil Nadu,Karur
+H063,Chalukya Cancer Institute,Cancer,9334567890,4.4,29 Fort Circle,Karnataka,Bijapur
+H064,Awadh Oncology Hospital,Cancer,9345678901,4.7,76 Residency Road,Uttar Pradesh,Faizabad
+H065,North Bengal Cancer Care,Cancer,9356789012,4.5,90 Hill Cart Road,West Bengal,Siliguri
+H066,Pushkar Oncology Center,Cancer,9367890123,4.3,12 Lake View,Rajasthan,Ajmer
+H067,Girnar Cancer Institute,Cancer,9378901234,4.6,45 Temple Street,Gujarat,Junagadh
+H068,Doaba Oncology Hospital,Cancer,9389012345,4.4,78 Market Road,Punjab,Hoshiarpur
+H069,Periyar Cancer Clinic,Cancer,9390123456,4.7,101 Forest Lane,Kerala,Palakkad
+H070,Chitrakoot Oncology Hub,Cancer,9401234567,4.5,34 Ashram Road,Madhya Pradesh,Satna
+H071,Marathwada Cancer Center,Cancer,9412345678,4.2,56 Aurangabad Road,Maharashtra,Latur
+H072,Nilgiri Oncology Institute,Cancer,9423456789,4.6,89 Hill View,Tamil Nadu,Ooty
+H073,Tungabhadra Cancer Hospital,Cancer,9434567890,4.4,22 River Road,Karnataka,Hospet
+H074,Sangam Cancer Clinic,Cancer,9445678901,4.7,67 Sangam Ghat,Uttar Pradesh,Mirzapur
+H075,Howrah Oncology Center,Cancer,9456789012,4.5,101 Bridge Road,West Bengal,Howrah
+H076,Sundarbans Oncology Center,Cancer,9467890123,4.3,12 Mangrove Lane,West Bengal,Canning
+H077,Desert Pearl Cancer Institute,Cancer,9478901234,4.6,45 Dune Road,Rajasthan,Jaisalmer
+H078,Narmada Oncology Hospital,Cancer,9489012345,4.4,78 Riverside,Madhya Pradesh,Hoshangabad
+H079,Malwa Valley Cancer Care,Cancer,9490123456,4.7,101 Valley View,Madhya Pradesh,Khandwa
+H080,Konkan Coast Oncology,Cancer,9501234567,4.5,34 Sea Breeze Lane,Maharashtra,Sindhudurg
+H081,Thanjai Cancer Clinic,Cancer,9512345678,4.2,56 Temple Street,Tamil Nadu,Thiruvarur
+H082,Western Ghats Oncology,Cancer,9523456789,4.6,89 Hilltop Road,Kerala,Wayanad
+H083,Vindhya Hills Cancer Center,Cancer,9534567890,4.4,22 Ridge Road,Madhya Pradesh,Rewa
+H084,Doon Valley Oncology,Cancer,9545678901,4.7,67 Forest Avenue,Uttar Pradesh,Saharanpur
+H085,Satyamev Cancer Hospital,Cancer,9556789012,4.5,88 Justice Marg,Gujarat,Bhuj
+H086,Royal Oncology Institute,Cancer,9567890123,4.3,12 Palace Road,Punjab,Mohali
+H087,Backwater Bloom Cancer Care,Cancer,9578901234,4.6,45 Lake View,Kerala,Kollam
+H088,Chambal River Oncology,Cancer,9589012345,4.4,78 Riverside Drive,Madhya Pradesh,Morena
+H089,Maratha Shield Cancer Center,Cancer,9590123456,4.7,101 Shivaji Path,Maharashtra,Nashik
+H090,Kongu Valley Oncology,Cancer,9601234567,4.5,34 Textile Avenue,Tamil Nadu,Namakkal
+H091,Sahyadri Oncology Hospital,Cancer,9612345678,4.2,56 Hill Station Road,Maharashtra,Satara
+H092,Eastern Lotus Cancer Care,Cancer,9623456789,4.6,89 Garden Street,West Bengal,Kharagpur
+H093,Rajput Legacy Oncology,Cancer,9634567890,4.4,22 Fort Marg,Rajasthan,Chittorgarh
+H094,Malabar Coast Cancer Clinic,Cancer,9645678901,4.7,67 Beachside Road,Kerala,Malappuram
+H095,Vindhya Oncology Research,Cancer,9656789012,4.5,88 Science Park,Madhya Pradesh,Sagar
+H096,Golden Horizon Cancer Center,Cancer,9667890123,4.3,12 Sunrise Avenue,Punjab,Firozpur
+H097,Cauvery River Oncology,Cancer,9678901234,4.6,45 Riverbank Street,Tamil Nadu,Nagapattinam
+H098,Ganges Oncology Hospital,Cancer,9689012345,4.4,78 Ghat Road,Uttar Pradesh,Fatehpur
+H099,Saurashtra Oncology Hub,Cancer,9690123456,4.7,101 Coastal Road,Gujarat,Jamnagar
+H100,Eastern Promise Cancer Care,Cancer,9701234567,4.5,34 Sunrise Lane,West Bengal,Durgapur
+H001,Fortis Escorts Heart Institute,Cardiology,01147190000,4.7,Okhla Road,Delhi,Delhi
+H002,Indraprastha Apollo Hospital,Cardiology,01142775777,4.6,Sarita Vihar,Delhi,Delhi
+H003,BLK Max Super Speciality Hospital,Cardiology,01130403040,4.5,Pusa Road,Delhi,Delhi
+H004,Artemis Hospital,Cardiology,01244511111,4.4,Sector 51,Haryana,Gurugram
+H005,Medanta – The Medicity,Cardiology,01244141414,4.8,Sector 38,Haryana,Gurugram
+H006,Sir Ganga Ram Hospital,Cardiology,01125750000,4.3,Rajender Nagar,Delhi,Delhi
+H007,Fortis Hospital Vasant Kunj,Cardiology,01126120000,4.2,Vasant Kunj,Delhi,Delhi
+H008,Max Hospital Saket,Cardiology,01126530000,4.1,Saket,Delhi,Delhi
+H009,Delhi Heart & Lung Institute,Cardiology,01123345566,4.0,Karol Bagh,Delhi,Delhi
+H010,Apollo Spectra Hospitals,Cardiology,01142660011,4.4,Sarita Vihar,Delhi,Delhi
+H011,Asian Heart Institute,Cardiology,02266986666,4.7,Bandra East,Maharashtra,Mumbai
+H012,Wockhardt Hospital,Cardiology,02230903000,4.5,South Mumbai,Maharashtra,Mumbai
+H013,Lilavati Hospital,Cardiology,02226260001,4.4,Bandstand,Maharashtra,Mumbai
+H014,Jehangir Hospital,Cardiology,02226103000,4.3,Pune,Maharashtra,Pune
+H015,Ruby Hall Clinic,Cardiology,02066080000,4.6,Pune,Maharashtra,Pune
+H016,Bombay Hospital,Cardiology,02223703333,4.2,Mumbai,Maharashtra,Mumbai
+H017,Seth GS Medical College & KEM Hospital,Cardiology,02224107207,4.1,Mumbai,Maharashtra,Mumbai
+H018,Breach Candy Hospital,Cardiology,02223693333,4.5,Mumbai,Maharashtra,Mumbai
+H019,Hiranandani Hospital,Cardiology,02267070000,4.4,Powai,Maharashtra,Mumbai
+H020,Aditya Birla Memorial Hospital,Cardiology,02266666000,4.3,Parel,Maharashtra,Mumbai
+H021,Fortis Hospital Bangalore,Cardiology,08066246666,4.6,Bannerghatta Road,Karnataka,Bengaluru
+H022,Manipal Hospital,Cardiology,08022225555,4.7,Old Airport Road,Karnataka,Bengaluru
+H023,Narayana Health,Cardiology,08022228888,4.5,Bommasandra,Karnataka,Bengaluru
+H024,Sakra World Hospital,Cardiology,08041414141,4.4,Whitefield,Karnataka,Bengaluru
+H025,Columbia Asia Hospital,Cardiology,08041234567,4.3,Hebbal,Karnataka,Bengaluru
+H026,BGS Global Hospital,Cardiology,08067654321,4.2,Kengeri,Karnataka,Bengaluru
+H027,Aster CMI Hospital,Cardiology,08022229999,4.4,Hebbal,Karnataka,Bengaluru
+H028,Apollo Hospitals Bangalore,Cardiology,08022223333,4.5,Bannerghatta Road,Karnataka,Bengaluru
+H029,Vydehi Institute of Medical Sciences,Cardiology,08028440000,4.3,Whitefield,Karnataka,Bengaluru
+H030,Cloudnine Hospital,Cardiology,08067890000,4.2,Jayanagar,Karnataka,Bengaluru
+H031,MIOT International,Cardiology,04443990000,4.6,Manapakkam,Tamil Nadu,Chennai
+H032,Apollo Hospitals Chennai,Cardiology,04428290000,4.7,Greams Road,Tamil Nadu,Chennai
+H033,Fortis Malar Hospital,Cardiology,04443520000,4.5,Adyar,Tamil Nadu,Chennai
+H034,Global Hospitals Chennai,Cardiology,04428250000,4.4,Perungudi,Tamil Nadu,Chennai
+H035,Dr. Mehta's Hospitals,Cardiology,04448610000,4.3,Koyambedu,Tamil Nadu,Chennai
+H036,SRM Hospital,Cardiology,04427480000,4.2,Kattankulathur,Tamil Nadu,Chennai
+H037,Vasantham Hospital,Cardiology,04443993333,4.4,Porur,Tamil Nadu,Chennai
+H038,Billroth Hospitals,Cardiology,04428230000,4.5,Nungambakkam,Tamil Nadu,Chennai
+H039,Chettinad Hospital,Cardiology,04447410000,4.3,Kelambakkam,Tamil Nadu,Chennai
+H040,Kauvery Hospital,Cardiology,04430200000,4.2,Trichy,Tamil Nadu,Trichy
+H041,Belle Vue Clinic,Cardiology,03322880000,4.5,Park Street,West Bengal,Kolkata
+H042,AMRI Hospitals Salt Lake,Cardiology,03323240000,4.4,Salt Lake,West Bengal,Kolkata
+H043,Fortis Hospital Kolkata,Cardiology,03340640000,4.6,Mukundapur,West Bengal,Kolkata
+H044,Medica Superspecialty Hospital,Cardiology,03344010000,4.3,Ultadanga,West Bengal,Kolkata
+H045,Ruby General Hospital,Cardiology,03340000000,4.2,Ballygunge,West Bengal,Kolkata
+H046,Peerless Hospital,Cardiology,03322870000,4.4,Salt Lake,West Bengal,Kolkata
+H047,Apollo Gleneagles Hospitals,Cardiology,03323240001,4.5,Ballygunge,West Bengal,Kolkata
+H048,Columbia Asia Hospitals Kolkata,Cardiology,03340660000,4.3,Mukundapur,West Bengal,Kolkata
+H049,Desun Hospital,Cardiology,03330110000,4.2,EM Bypass,West Bengal,Kolkata
+H050,Susruta Hospital,Cardiology,03322880001,4.1,Salt Lake,West Bengal,Kolkata
+H051,Yashoda Hospitals,Cardiology,04023550000,4.5,Somajiguda,Telangana,Hyderabad
+H052,KIMS Hospitals,Cardiology,04066880000,4.4,Secunderabad,Telangana,Hyderabad
+H053,CARE Hospitals,Cardiology,04023600000,4.6,Banjara Hills,Telangana,Hyderabad
+H054,Apollo Hospitals Hyderabad,Cardiology,04028290000,4.5,Hitech City,Telangana,Hyderabad
+H055,Continental Hospitals,Cardiology,04066000000,4.3,Gachibowli,Telangana,Hyderabad
+H056,AIG Hospitals,Cardiology,04023553333,4.2,Gachibowli,Telangana,Hyderabad
+H057,Medicover Hospitals,Cardiology,04040120000,4.4,Hitech City,Telangana,Hyderabad
+H058,Omega Hospitals,Cardiology,04066880001,4.3,Madhapur,Telangana,Hyderabad
+H059,Sunshine Hospitals,Cardiology,04023603333,4.2,Secunderabad,Telangana,Hyderabad
+H060,Star Hospitals,Cardiology,04023554444,4.1,Somajiguda,Telangana,Hyderabad
+H061,KIMS Hospitals Vijayawada,Cardiology,08662340000,4.5,Vijayawada,Andhra Pradesh,Vijayawada
+H062,Apollo Hospitals Visakhapatnam,Cardiology,08912550000,4.6,Dwaraka Nagar,Andhra Pradesh,Visakhapatnam
+H063,Narayana Hrudayalaya,Cardiology,08912340000,4.4,Guntur,Andhra Pradesh,Guntur
+H064,Care Hospitals Visakhapatnam,Cardiology,08912350000,4.3,Dwaraka Nagar,Andhra Pradesh,Visakhapatnam
+H065,Fortis Hospitals Vijayawada,Cardiology,08662345555,4.2,Vijayawada,Andhra Pradesh,Vijayawada
+H066,Spandana Hospitals,Cardiology,08912559999,4.4,Visakhapatnam,Andhra Pradesh,Visakhapatnam
+H067,Rainbow Hospitals,Cardiology,08912341111,4.3,Vijayawada,Andhra Pradesh,Vijayawada
+H068,Apex Hospitals,Cardiology,08912558888,4.2,Visakhapatnam,Andhra Pradesh,Visakhapatnam
+H069,Vijaya Hospitals,Cardiology,08662347777,4.1,Guntur,Andhra Pradesh,Guntur
+H070,Sri Venkateswara Hospitals,Cardiology,08912343333,4.3,Vijayawada,Andhra Pradesh,Vijayawada
+H071,Aster Medcity,Cardiology,04842320000,4.5,Kochi,Kerala,Kochi
+H072,Lisie Hospital,Cardiology,04842340000,4.4,Ernakulam,Kerala,Kochi
+H073,Amrita Institute of Medical Sciences,Cardiology,04842360000,4.6,Kochi,Kerala,Kochi
+H074,Rajagiri Hospital,Cardiology,04842370000,4.3,Kochi,Kerala,Kochi
+H075,Medical Trust Hospital,Cardiology,04842380000,4.2,Kochi,Kerala,Kochi
+H076,PVS Memorial Hospital,Cardiology,04842390000,4.4,Kottayam,Kerala,Kottayam
+H077,Sree Chitra Institute,Cardiology,04712340000,4.5,Thiruvananthapuram,Kerala,Thiruvananthapuram
+H078,Ananthapuri Hospitals,Cardiology,04712345555,4.3,Thiruvananthapuram,Kerala,Thiruvananthapuram
+H079,Lakeshore Hospital,Cardiology,04842311111,4.2,Kochi,Kerala,Kochi
+H080,Asha Hospital,Cardiology,04842322222,4.1,Kochi,Kerala,Kochi
+H081,Max Super Speciality Hospital Mohali,Cardiology,01722550000,4.5,Mohali,Punjab,Mohali
+H082,Fortis Hospital Amritsar,Cardiology,01832440000,4.4,Amritsar,Punjab,Amritsar
+H083,Indus Hospital,Cardiology,01722551111,4.6,Chandigarh,Punjab,Chandigarh
+H084,Christian Medical College Ludhiana,Cardiology,01612230000,4.3,Ludhiana,Punjab,Ludhiana
+H085,Silver Oaks Hospital,Cardiology,01832445555,4.2,Amritsar,Punjab,Amritsar
+H086,IVY Hospital,Cardiology,01722552222,4.4,Chandigarh,Punjab,Chandigarh
+H087,Max Hospital Patiala,Cardiology,01751230000,4.3,Patiala,Punjab,Patiala
+H088,Rajinder Hospital,Cardiology,01712340000,4.2,Ludhiana,Punjab,Ludhiana
+H089,Heart Care Centre Jalandhar,Cardiology,01812550000,4.1,Jalandhar,Punjab,Jalandhar
+H090,Fortis Heart Centre Chandigarh,Cardiology,01722553333,4.5,Chandigarh,Punjab,Chandigarh
+H091,Fortis Hospital Jaipur,Cardiology,01412340000,4.5,Jaipur,Rajasthan,Jaipur
+H092,Global Heart Centre Jaipur,Cardiology,01412345555,4.4,Jaipur,Rajasthan,Jaipur
+H093,Vatsalya Heart Institute Udaipur,Cardiology,02942340000,4.3,Udaipur,Rajasthan,Udaipur
+H094,Shalby Hospital Ahmedabad,Cardiology,07940040000,4.5,Ahmedabad,Gujarat,Ahmedabad
+H095,Sterling Hospital Ahmedabad,Cardiology,07940041111,4.4,Ahmedabad,Gujarat,Ahmedabad
+H096,Fortis Hospital Ahmedabad,Cardiology,07940042222,4.3,Ahmedabad,Gujarat,Ahmedabad
+H097,Apollo Hospital Ahmedabad,Cardiology,07940043333,4.5,Ahmedabad,Gujarat,Ahmedabad
+H098,Sahara Heart Hospital Jaipur,Cardiology,01412346666,4.4,Jaipur,Rajasthan,Jaipur
+H099,Swasthya Heart Centre Jaipur,Cardiology,01412347777,4.3,Jaipur,Rajasthan,Jaipur
+H100,Gujarat Heart & Research Institute,Cardiology,07940044444,4.5,Ahmedabad,Gujarat,Ahmedabad
+O001,Indian Spinal Injuries Centre,Orthopedics,01126500000,4.6,Vasant Kunj,Delhi,Delhi
+O002,BLK Super Speciality Hospital,Orthopedics,01130403040,4.5,Pusa Road,Delhi,Delhi
+O003,Max Super Speciality Hospital,Orthopedics,01126510000,4.4,Saket,Delhi,Delhi
+O004,Fortis Hospital Vasant Kunj,Orthopedics,01126120000,4.3,Vasant Kunj,Delhi,Delhi
+O005,Indraprastha Apollo Hospital,Orthopedics,01142775777,4.5,Sarita Vihar,Delhi,Delhi
+O006,Sir Ganga Ram Hospital,Orthopedics,01125750000,4.2,Rajender Nagar,Delhi,Delhi
+O007,Venkateshwar Hospital,Orthopedics,01149870000,4.1,Dwarka,Delhi,Delhi
+O008,Apollo Spectra Hospitals,Orthopedics,01142660011,4.3,Sarita Vihar,Delhi,Delhi
+O009,Shanti Mukand Hospital,Orthopedics,01125980000,4.2,Punjabi Bagh,Delhi,Delhi
+O010,BLK Heart & Bone Institute,Orthopedics,01130404040,4.4,Pusa Road,Delhi,Delhi
+O011,Lilavati Hospital,Orthopedics,02226260001,4.5,Bandra West,Maharashtra,Mumbai
+O012,Bombay Hospital,Orthopedics,02223703333,4.4,Mumbai,Maharashtra,Mumbai
+O013,Fortis Hospital Mulund,Orthopedics,02225660000,4.3,Mulund,Maharashtra,Mumbai
+O014,Sahyadri Hospitals,Orthopedics,02066080000,4.5,Pune,Maharashtra,Pune
+O015,Jehangir Hospital,Orthopedics,02066090000,4.4,Pune,Maharashtra,Pune
+O016,Wockhardt Hospital,Orthopedics,02230903000,4.3,South Mumbai,Maharashtra,Mumbai
+O017,Hiranandani Hospital,Orthopedics,02267070000,4.2,Powai,Maharashtra,Mumbai
+O018,Kokilaben Dhirubhai Ambani Hospital,Orthopedics,02230909000,4.5,Andheri West,Maharashtra,Mumbai
+O019,Aditya Birla Memorial Hospital,Orthopedics,02266666000,4.3,Parel,Maharashtra,Mumbai
+O020,Breach Candy Hospital,Orthopedics,02223693333,4.2,Mumbai,Maharashtra,Mumbai
+O021,Manipal Hospital,Orthopedics,08022225555,4.6,Old Airport Road,Karnataka,Bengaluru
+O022,Fortis Hospital Bangalore,Orthopedics,08066246666,4.5,Bannerghatta Road,Karnataka,Bengaluru
+O023,Narayana Health,Orthopedics,08022228888,4.4,Bommasandra,Karnataka,Bengaluru
+O024,Columbia Asia Hospital,Orthopedics,08041234567,4.3,Hebbal,Karnataka,Bengaluru
+O025,Aster CMI Hospital,Orthopedics,08022229999,4.5,Hebbal,Karnataka,Bengaluru
+O026,Vydehi Institute of Medical Sciences,Orthopedics,08028440000,4.2,Whitefield,Karnataka,Bengaluru
+O027,Cloudnine Hospital,Orthopedics,08067890000,4.3,Jayanagar,Karnataka,Bengaluru
+O028,Sakra World Hospital,Orthopedics,08041414141,4.4,Whitefield,Karnataka,Bengaluru
+O029,Sagar Hospitals,Orthopedics,08012340000,4.2,Jayanagar,Karnataka,Bengaluru
+O030,Apollo Hospitals Bangalore,Orthopedics,08022223333,4.3,Bannerghatta Road,Karnataka,Bengaluru
+O031,Apollo Hospitals Chennai,Orthopedics,04428290000,4.6,Greams Road,Tamil Nadu,Chennai
+O032,MIOT International,Orthopedics,04443990000,4.5,Manapakkam,Tamil Nadu,Chennai
+O033,Fortis Malar Hospital,Orthopedics,04443520000,4.4,Adyar,Tamil Nadu,Chennai
+O034,Global Hospitals,Orthopedics,04428250000,4.3,Perungudi,Tamil Nadu,Chennai
+O035,Billroth Hospitals,Orthopedics,04428230000,4.2,Nungambakkam,Tamil Nadu,Chennai
+O036,Vasantham Hospital,Orthopedics,04443993333,4.3,Porur,Tamil Nadu,Chennai
+O037,SRM Hospitals,Orthopedics,04427480000,4.2,Kattankulathur,Tamil Nadu,Chennai
+O038,Chettinad Hospital,Orthopedics,04447410000,4.1,Kelambakkam,Tamil Nadu,Chennai
+O039,Kauvery Hospital,Orthopedics,04430200000,4.3,Trichy,Tamil Nadu,Trichy
+O040,Apollo Spectra Hospitals,Orthopedics,04442660011,4.2,Chennai,Tamil Nadu,Chennai
+O041,Fortis Hospital Kolkata,Orthopedics,03340640000,4.5,Mukundapur,West Bengal,Kolkata
+O042,AMRI Hospitals Salt Lake,Orthopedics,03323240000,4.4,Salt Lake,West Bengal,Kolkata
+O043,Belle Vue Clinic,Orthopedics,03322880000,4.3,Park Street,West Bengal,Kolkata
+O044,Medica Superspecialty Hospital,Orthopedics,03344010000,4.2,Ultadanga,West Bengal,Kolkata
+O045,Ruby General Hospital,Orthopedics,03340000000,4.1,Ballygunge,West Bengal,Kolkata
+O046,Apollo Gleneagles Hospitals,Orthopedics,03323240001,4.3,Ballygunge,West Bengal,Kolkata
+O047,Columbia Asia Hospitals Kolkata,Orthopedics,03340660000,4.2,Mukundapur,West Bengal,Kolkata
+O048,Peerless Hospital,Orthopedics,03322870000,4.1,Salt Lake,West Bengal,Kolkata
+O049,Desun Hospital,Orthopedics,03330110000,4.3,EM Bypass,West Bengal,Kolkata
+O050,Susruta Hospital,Orthopedics,03322880001,4.2,Salt Lake,West Bengal,Kolkata
+O051,Yashoda Hospitals,Orthopedics,04023550000,4.5,Somajiguda,Telangana,Hyderabad
+O052,KIMS Hospitals,Orthopedics,04066880000,4.4,Secunderabad,Telangana,Hyderabad
+O053,CARE Hospitals,Orthopedics,04023600000,4.6,Banjara Hills,Telangana,Hyderabad
+O054,Apollo Hospitals Hyderabad,Orthopedics,04028290000,4.5,Hitech City,Telangana,Hyderabad
+O055,Continental Hospitals,Orthopedics,04066000000,4.3,Gachibowli,Telangana,Hyderabad
+O056,AIG Hospitals,Orthopedics,04023553333,4.2,Gachibowli,Telangana,Hyderabad
+O057,Medicover Hospitals,Orthopedics,04040120000,4.4,Hitech City,Telangana,Hyderabad
+O058,Omega Hospitals,Orthopedics,04066880001,4.3,Madhapur,Telangana,Hyderabad
+O059,Sunshine Hospitals,Orthopedics,04023603333,4.2,Secunderabad,Telangana,Hyderabad
+O060,Star Hospitals,Orthopedics,04023554444,4.1,Somajiguda,Telangana,Hyderabad
+O061,KIMS Hospitals Vijayawada,Orthopedics,08662340000,4.5,Vijayawada,Andhra Pradesh,Vijayawada
+O062,Apollo Hospitals Visakhapatnam,Orthopedics,08912550000,4.6,Dwaraka Nagar,Andhra Pradesh,Visakhapatnam
+O063,Narayana Hrudayalaya,Orthopedics,08912340000,4.4,Guntur,Andhra Pradesh,Guntur
+O064,Care Hospitals Visakhapatnam,Orthopedics,08912350000,4.3,Dwaraka Nagar,Andhra Pradesh,Visakhapatnam
+O065,Fortis Hospitals Vijayawada,Orthopedics,08662345555,4.2,Vijayawada,Andhra Pradesh,Vijayawada
+O066,Spandana Hospitals,Orthopedics,08912559999,4.4,Visakhapatnam,Andhra Pradesh,Visakhapatnam
+O067,Rainbow Hospitals,Orthopedics,08912341111,4.3,Vijayawada,Andhra Pradesh,Vijayawada
+O068,Apex Hospitals,Orthopedics,08912558888,4.2,Visakhapatnam,Andhra Pradesh,Visakhapatnam
+O069,Vijaya Hospitals,Orthopedics,08662347777,4.1,Guntur,Andhra Pradesh,Guntur
+O070,Sri Venkateswara Hospitals,Orthopedics,08912343333,4.3,Vijayawada,Andhra Pradesh,Vijayawada
+O071,Aster Medcity,Orthopedics,04842320000,4.5,Kochi,Kerala,Kochi
+O072,Lisie Hospital,Orthopedics,04842340000,4.4,Ernakulam,Kerala,Kochi
+O073,Amrita Institute of Medical Sciences,Orthopedics,04842360000,4.6,Kochi,Kerala,Kochi
+O074,Rajagiri Hospital,Orthopedics,04842370000,4.3,Kochi,Kerala,Kochi
+O075,Medical Trust Hospital,Orthopedics,04842380000,4.2,Kochi,Kerala,Kochi
+O076,PVS Memorial Hospital,Orthopedics,04842390000,4.4,Kottayam,Kerala,Kottayam
+O077,Sree Chitra Institute,Orthopedics,04712340000,4.5,Thiruvananthapuram,Kerala,Thiruvananthapuram
+O078,Ananthapuri Hospitals,Orthopedics,04712345555,4.3,Thiruvananthapuram,Kerala,Thiruvananthapuram
+O079,Lakeshore Hospital,Orthopedics,04842311111,4.2,Kochi,Kerala,Kochi
+O080,Asha Hospital,Orthopedics,04842322222,4.1,Kochi,Kerala,Kochi
+O081,Max Super Speciality Hospital Mohali,Orthopedics,01722550000,4.5,Mohali,Punjab,Mohali
+O082,Fortis Hospital Amritsar,Orthopedics,01832440000,4.4,Amritsar,Punjab,Amritsar
+O083,Indus Hospital,Orthopedics,01722551111,4.6,Chandigarh,Punjab,Chandigarh
+O084,Christian Medical College Ludhiana,Orthopedics,01612230000,4.3,Ludhiana,Punjab,Ludhiana
+O085,Silver Oaks Hospital,Orthopedics,01832445555,4.2,Amritsar,Punjab,Amritsar
+O086,IVY Hospital,Orthopedics,01722552222,4.4,Chandigarh,Punjab,Chandigarh
+O087,Max Hospital Patiala,Orthopedics,01751230000,4.3,Patiala,Punjab,Patiala
+O088,Rajinder Hospital,Orthopedics,01712340000,4.2,Ludhiana,Punjab,Ludhiana
+O089,Heart & Bone Centre Jalandhar,Orthopedics,01812550000,4.1,Jalandhar,Punjab,Jalandhar
+O090,Fortis Bone & Joint Chandigarh,Orthopedics,01722553333,4.5,Chandigarh,Punjab,Chandigarh
+O091,Fortis Hospital Jaipur,Orthopedics,01412340000,4.5,Jaipur,Rajasthan,Jaipur
+O092,Global Bone & Joint Centre Jaipur,Orthopedics,01412345555,4.4,Jaipur,Rajasthan,Jaipur
+O093,Vatsalya Ortho Institute Udaipur,Orthopedics,02942340000,4.3,Udaipur,Rajasthan,Udaipur
+O094,Shalby Hospital Ahmedabad,Orthopedics,07940040000,4.5,Ahmedabad,Gujarat,Ahmedabad
+O095,Sterling Hospital Ahmedabad,Orthopedics,07940041111,4.4,Ahmedabad,Gujarat,Ahmedabad
+O096,Fortis Hospital Ahmedabad,Orthopedics,07940042222,4.3,Ahmedabad,Gujarat,Ahmedabad
+O097,Apollo Hospital Ahmedabad,Orthopedics,07940043333,4.5,Ahmedabad,Gujarat,Ahmedabad
+O098,Sahara Bone & Joint Jaipur,Orthopedics,01412346666,4.4,Jaipur,Rajasthan,Jaipur
+O099,Swasthya Ortho Centre Jaipur,Orthopedics,01412347777,4.3,Jaipur,Rajasthan,Jaipur
+O100,Gujarat Bone & Joint Institute,Orthopedics,07940044444,4.5,Ahmedabad,Gujarat,Ahmedabad
+H001,Sunrise Cancer Care,Cancer,9876543210,4.5,"12 MG Road, Sector 5",Maharashtra,Mumbai
+H002,Lotus Oncology Center,Cancer,9123456789,4.3,45 Nehru Nagar,Tamil Nadu,Chennai
+H003,Apex Cancer Institute,Cancer,9988776655,4.7,88 Residency Road,Karnataka,Bengaluru
+H004,Hope Oncology Hospital,Cancer,9090909090,4.2,21 Civil Lines,Uttar Pradesh,Lucknow
+H005,Phoenix Cancer Clinic,Cancer,9345678901,4.6,7 Park Street,West Bengal,Kolkata
+H006,Shakti Cancer Research,Cancer,9871234567,4.4,33 Gandhi Marg,Rajasthan,Jaipur
+H007,Nirvana Oncology Center,Cancer,9001234567,4.1,19 Patel Chowk,Gujarat,Ahmedabad
+H008,Zenith Cancer Hospital,Cancer,9012345678,4.8,56 Sector 18,Punjab,Chandigarh
+H009,Omega Cancer Institute,Cancer,9321654987,4.2,101 Ring Road,Kerala,Kochi
+H010,Triveni Oncology Hub,Cancer,9456123789,4.5,67 Station Road,Madhya Pradesh,Bhopal
+H011,Blue Ribbon Cancer Center,Cancer,9812345678,4.3,22 Tilak Road,Maharashtra,Pune
+H012,Southern Oncology Clinic,Cancer,9823456789,4.6,89 Anna Salai,Tamil Nadu,Coimbatore
+H013,Unity Cancer Hospital,Cancer,9834567890,4.4,34 MG Layout,Karnataka,Mysuru
+H014,Healing Touch Oncology,Cancer,9845678901,4.7,76 Gomti Nagar,Uttar Pradesh,Kanpur
+H015,Eastern Hope Cancer Care,Cancer,9856789012,4.2,55 Salt Lake,West Bengal,Asansol
+H016,Rajputana Cancer Institute,Cancer,9867890123,4.5,90 MI Road,Rajasthan,Udaipur
+H017,Sardar Oncology Center,Cancer,9878901234,4.3,12 Ring Road,Gujarat,Surat
+H018,Golden Leaf Cancer Hospital,Cancer,9889012345,4.6,78 Sector 22,Punjab,Amritsar
+H019,Malabar Oncology Hub,Cancer,9890123456,4.4,65 MG Road,Kerala,Thiruvananthapuram
+H020,Vindhya Cancer Clinic,Cancer,9901234567,4.7,43 MP Nagar,Madhya Pradesh,Indore
+H021,Western Oncology Center,Cancer,9912345678,4.5,11 FC Road,Maharashtra,Nagpur
+H022,Pearl Cancer Institute,Cancer,9923456789,4.3,66 Race Course,Tamil Nadu,Madurai
+H023,Kaveri Oncology Hospital,Cancer,9934567890,4.6,29 Lalbagh Road,Karnataka,Hubli
+H024,Ayodhya Cancer Care,Cancer,9945678901,4.4,88 Ram Path,Uttar Pradesh,Ayodhya
+H025,Bengal Oncology Research,Cancer,9956789012,4.7,101 Howrah Bridge,West Bengal,Howrah
+H026,Desert Bloom Oncology,Cancer,9967890123,4.3,23 C-Scheme,Rajasthan,Jodhpur
+H027,Riverfront Cancer Care,Cancer,9978901234,4.6,77 Sabarmati Road,Gujarat,Gandhinagar
+H028,Golden Temple Oncology,Cancer,9989012345,4.4,12 Heritage Street,Punjab,Patiala
+H029,Backwater Cancer Institute,Cancer,9990123456,4.7,34 Marine Drive,Kerala,Kozhikode
+H030,Vindhya Oncology Center,Cancer,9001234567,4.5,56 Rajwada Chowk,Madhya Pradesh,Gwalior
+H031,Deccan Cancer Hospital,Cancer,9012345678,4.2,89 FC Road,Maharashtra,Aurangabad
+H032,Southern Star Oncology,Cancer,9023456789,4.6,101 Gandhi Road,Tamil Nadu,Tiruchirappalli
+H033,Silicon Valley Cancer Care,Cancer,9034567890,4.4,22 Tech Park,Karnataka,Mangaluru
+H034,Ganga Oncology Clinic,Cancer,9045678901,4.7,78 River View,Uttar Pradesh,Varanasi
+H035,Eastern Horizon Cancer Hub,Cancer,9056789012,4.5,90 Hill Road,West Bengal,Darjeeling
+H036,Rajput Oncology Center,Cancer,9067890123,4.3,33 Fort Road,Rajasthan,Bikaner
+H037,Diamond Cancer Institute,Cancer,9078901234,4.6,12 GIDC Circle,Gujarat,Rajkot
+H038,Majestic Oncology Hospital,Cancer,9089012345,4.4,45 Mall Road,Punjab,Ludhiana
+H039,Coconut Grove Cancer Care,Cancer,9090123456,4.7,67 Beach Road,Kerala,Alappuzha
+H040,Malwa Cancer Clinic,Cancer,9101234567,4.5,88 MG Road,Madhya Pradesh,Jabalpur
+H041,Maratha Oncology Center,Cancer,9112345678,4.2,101 Shivaji Nagar,Maharashtra,Solapur
+H042,Kongu Cancer Institute,Cancer,9123456789,4.6,55 Textile Road,Tamil Nadu,Erode
+H043,Coastal Oncology Hub,Cancer,9134567890,4.4,76 Lighthouse Street,Karnataka,Udupi
+H044,Ram Oncology Hospital,Cancer,9145678901,4.7,21 Ayodhya Marg,Uttar Pradesh,Gorakhpur
+H045,Bardhaman Cancer Research,Cancer,9156789012,4.5,34 GT Road,West Bengal,Bardhaman
+H046,Thar Oncology Center,Cancer,9167890123,4.3,67 Sand Dunes Road,Rajasthan,Barmer
+H047,Saurashtra Cancer Clinic,Cancer,9178901234,4.6,89 Porbandar Road,Gujarat,Bhavnagar
+H048,Five Rivers Oncology,Cancer,9189012345,4.4,12 Sutlej Street,Punjab,Bathinda
+H049,Spice Coast Cancer Care,Cancer,9190123456,4.7,101 Fort Kochi,Kerala,Kannur
+H050,Chambal Oncology Hospital,Cancer,9201234567,4.5,56 Riverfront,Madhya Pradesh,Bhind
+H051,Vidarbha Oncology Center,Cancer,9212345678,4.3,12 Cotton Market,Maharashtra,Akola
+H052,Meenakshi Cancer Institute,Cancer,9223456789,4.6,45 Temple Street,Tamil Nadu,Thanjavur
+H053,Sharada Oncology Hospital,Cancer,9234567890,4.4,78 University Road,Karnataka,Belagavi
+H054,Kashi Cancer Clinic,Cancer,9245678901,4.7,101 Vishwanath Gali,Uttar Pradesh,Prayagraj
+H055,Shantiniketan Oncology,Cancer,9256789012,4.5,34 Tagore Avenue,West Bengal,Bolpur
+H056,Desert Rose Cancer Care,Cancer,9267890123,4.3,56 Palace Road,Rajasthan,Kota
+H057,Sabarmati Oncology Hub,Cancer,9278901234,4.6,89 Riverfront,Gujarat,Mehsana
+H058,Guru Nanak Cancer Center,Cancer,9289012345,4.4,12 GT Road,Punjab,Jalandhar
+H059,Alleppey Oncology Institute,Cancer,9290123456,4.7,67 Canal Road,Kerala,Alappuzha
+H060,Mahakal Cancer Hospital,Cancer,9301234567,4.5,88 Temple Marg,Madhya Pradesh,Ujjain
+H061,Konkan Cancer Clinic,Cancer,9312345678,4.2,101 Sea View,Maharashtra,Ratnagiri
+H062,Cauvery Oncology Center,Cancer,9323456789,4.6,55 Riverbank Road,Tamil Nadu,Karur
+H063,Chalukya Cancer Institute,Cancer,9334567890,4.4,29 Fort Circle,Karnataka,Bijapur
+H064,Awadh Oncology Hospital,Cancer,9345678901,4.7,76 Residency Road,Uttar Pradesh,Faizabad
+H065,North Bengal Cancer Care,Cancer,9356789012,4.5,90 Hill Cart Road,West Bengal,Siliguri
+H066,Pushkar Oncology Center,Cancer,9367890123,4.3,12 Lake View,Rajasthan,Ajmer
+H067,Girnar Cancer Institute,Cancer,9378901234,4.6,45 Temple Street,Gujarat,Junagadh
+H068,Doaba Oncology Hospital,Cancer,9389012345,4.4,78 Market Road,Punjab,Hoshiarpur
+H069,Periyar Cancer Clinic,Cancer,9390123456,4.7,101 Forest Lane,Kerala,Palakkad
+H070,Chitrakoot Oncology Hub,Cancer,9401234567,4.5,34 Ashram Road,Madhya Pradesh,Satna
+H071,Marathwada Cancer Center,Cancer,9412345678,4.2,56 Aurangabad Road,Maharashtra,Latur
+H072,Nilgiri Oncology Institute,Cancer,9423456789,4.6,89 Hill View,Tamil Nadu,Ooty
+H073,Tungabhadra Cancer Hospital,Cancer,9434567890,4.4,22 River Road,Karnataka,Hospet
+H074,Sangam Cancer Clinic,Cancer,9445678901,4.7,67 Sangam Ghat,Uttar Pradesh,Mirzapur
+H075,Howrah Oncology Center,Cancer,9456789012,4.5,101 Bridge Road,West Bengal,Howrah
+H076,Sundarbans Oncology Center,Cancer,9467890123,4.3,12 Mangrove Lane,West Bengal,Canning
+H077,Desert Pearl Cancer Institute,Cancer,9478901234,4.6,45 Dune Road,Rajasthan,Jaisalmer
+H078,Narmada Oncology Hospital,Cancer,9489012345,4.4,78 Riverside,Madhya Pradesh,Hoshangabad
+H079,Malwa Valley Cancer Care,Cancer,9490123456,4.7,101 Valley View,Madhya Pradesh,Khandwa
+H080,Konkan Coast Oncology,Cancer,9501234567,4.5,34 Sea Breeze Lane,Maharashtra,Sindhudurg
+H081,Thanjai Cancer Clinic,Cancer,9512345678,4.2,56 Temple Street,Tamil Nadu,Thiruvarur
+H082,Western Ghats Oncology,Cancer,9523456789,4.6,89 Hilltop Road,Kerala,Wayanad
+H083,Vindhya Hills Cancer Center,Cancer,9534567890,4.4,22 Ridge Road,Madhya Pradesh,Rewa
+H084,Doon Valley Oncology,Cancer,9545678901,4.7,67 Forest Avenue,Uttar Pradesh,Saharanpur
+H085,Satyamev Cancer Hospital,Cancer,9556789012,4.5,88 Justice Marg,Gujarat,Bhuj
+H086,Royal Oncology Institute,Cancer,9567890123,4.3,12 Palace Road,Punjab,Mohali
+H087,Backwater Bloom Cancer Care,Cancer,9578901234,4.6,45 Lake View,Kerala,Kollam
+H088,Chambal River Oncology,Cancer,9589012345,4.4,78 Riverside Drive,Madhya Pradesh,Morena
+H089,Maratha Shield Cancer Center,Cancer,9590123456,4.7,101 Shivaji Path,Maharashtra,Nashik
+H090,Kongu Valley Oncology,Cancer,9601234567,4.5,34 Textile Avenue,Tamil Nadu,Namakkal
+H091,Sahyadri Oncology Hospital,Cancer,9612345678,4.2,56 Hill Station Road,Maharashtra,Satara
+H092,Eastern Lotus Cancer Care,Cancer,9623456789,4.6,89 Garden Street,West Bengal,Kharagpur
+H093,Rajput Legacy Oncology,Cancer,9634567890,4.4,22 Fort Marg,Rajasthan,Chittorgarh
+H094,Malabar Coast Cancer Clinic,Cancer,9645678901,4.7,67 Beachside Road,Kerala,Malappuram
+H095,Vindhya Oncology Research,Cancer,9656789012,4.5,88 Science Park,Madhya Pradesh,Sagar
+H096,Golden Horizon Cancer Center,Cancer,9667890123,4.3,12 Sunrise Avenue,Punjab,Firozpur
+H097,Cauvery River Oncology,Cancer,9678901234,4.6,45 Riverbank Street,Tamil Nadu,Nagapattinam
+H098,Ganges Oncology Hospital,Cancer,9689012345,4.4,78 Ghat Road,Uttar Pradesh,Fatehpur
+H099,Saurashtra Oncology Hub,Cancer,9690123456,4.7,101 Coastal Road,Gujarat,Jamnagar
+H100,Eastern Promise Cancer Care,Cancer,9701234567,4.5,34 Sunrise Lane,West Bengal,Durgapur
+H001,Renal Care Center,Kidney,9812345670,4.5,12 MG Road,Maharashtra,Mumbai
+H002,Lotus Nephrology Institute,Kidney,9823456781,4.3,45 Nehru Nagar,Tamil Nadu,Chennai
+H003,Apex Kidney Hospital,Kidney,9834567892,4.6,88 Residency Road,Karnataka,Bengaluru
+H004,Hope Renal Hospital,Kidney,9845678903,4.2,21 Civil Lines,Uttar Pradesh,Lucknow
+H005,Phoenix Kidney Clinic,Kidney,9856789014,4.4,7 Park Street,West Bengal,Kolkata
+H006,Shakti Nephrology Center,Kidney,9867890125,4.3,33 Gandhi Marg,Rajasthan,Jaipur
+H007,Nirvana Kidney Institute,Kidney,9878901236,4.6,19 Patel Chowk,Gujarat,Ahmedabad
+H008,Zenith Renal Hospital,Kidney,9889012347,4.4,56 Sector 18,Punjab,Chandigarh
+H009,Omega Kidney Care,Kidney,9890123458,4.7,101 Ring Road,Kerala,Kochi
+H010,Triveni Nephrology Hub,Kidney,9901234569,4.5,67 Station Road,Madhya Pradesh,Bhopal
+H011,Blue Ribbon Kidney Center,Kidney,9912345670,4.3,22 Tilak Road,Maharashtra,Pune
+H012,Southern Renal Clinic,Kidney,9923456781,4.6,89 Anna Salai,Tamil Nadu,Coimbatore
+H013,Unity Kidney Hospital,Kidney,9934567892,4.4,34 MG Layout,Karnataka,Mysuru
+H014,Healing Touch Nephrology,Kidney,9945678903,4.7,76 Gomti Nagar,Uttar Pradesh,Kanpur
+H015,Eastern Hope Kidney Care,Kidney,9956789014,4.2,55 Salt Lake,West Bengal,Asansol
+H016,Rajputana Renal Institute,Kidney,9967890125,4.5,90 MI Road,Rajasthan,Udaipur
+H017,Sardar Kidney Center,Kidney,9978901236,4.3,12 Ring Road,Gujarat,Surat
+H018,Golden Leaf Nephrology,Kidney,9989012347,4.6,78 Sector 22,Punjab,Amritsar
+H019,Malabar Renal Hub,Kidney,9990123458,4.4,65 MG Road,Kerala,Thiruvananthapuram
+H020,Vindhya Kidney Clinic,Kidney,9001234560,4.7,43 MP Nagar,Madhya Pradesh,Indore
+H021,Western Renal Center,Kidney,9012345671,4.5,11 FC Road,Maharashtra,Nagpur
+H022,Pearl Kidney Institute,Kidney,9023456782,4.3,66 Race Course,Tamil Nadu,Madurai
+H023,Kaveri Nephrology Hospital,Kidney,9034567893,4.6,29 Lalbagh Road,Karnataka,Hubli
+H024,Ayodhya Kidney Care,Kidney,9045678904,4.4,88 Ram Path,Uttar Pradesh,Ayodhya
+H025,Bengal Renal Research,Kidney,9056789015,4.7,101 Howrah Bridge,West Bengal,Howrah
+H026,Desert Bloom Nephrology,Kidney,9067890126,4.3,23 C-Scheme,Rajasthan,Jodhpur
+H027,Riverfront Kidney Care,Kidney,9078901237,4.6,77 Sabarmati Road,Gujarat,Gandhinagar
+H028,Golden Temple Renal Center,Kidney,9089012348,4.4,12 Heritage Street,Punjab,Patiala
+H029,Backwater Kidney Institute,Kidney,9090123459,4.7,34 Marine Drive,Kerala,Kozhikode
+H030,Vindhya Renal Center,Kidney,9101234560,4.5,56 Rajwada Chowk,Madhya Pradesh,Gwalior
+H031,Deccan Kidney Hospital,Kidney,9112345671,4.2,89 FC Road,Maharashtra,Aurangabad
+H032,Southern Star Nephrology,Kidney,9123456782,4.6,101 Gandhi Road,Tamil Nadu,Tiruchirappalli
+H033,Silicon Valley Kidney Care,Kidney,9134567893,4.4,22 Tech Park,Karnataka,Mangaluru
+H034,Ganga Renal Clinic,Kidney,9145678904,4.7,78 River View,Uttar Pradesh,Varanasi
+H035,Eastern Horizon Kidney Hub,Kidney,9156789015,4.5,90 Hill Road,West Bengal,Darjeeling
+H036,Rajput Kidney Center,Kidney,9167890126,4.3,33 Fort Road,Rajasthan,Bikaner
+H037,Diamond Renal Institute,Kidney,9178901237,4.6,12 GIDC Circle,Gujarat,Rajkot
+H038,Majestic Nephrology Hospital,Kidney,9189012348,4.4,45 Mall Road,Punjab,Ludhiana
+H039,Coconut Grove Kidney Care,Kidney,9190123459,4.7,67 Beach Road,Kerala,Alappuzha
+H040,Malwa Kidney Clinic,Kidney,9201234560,4.5,88 MG Road,Madhya Pradesh,Jabalpur
+H041,Maratha Renal Center,Kidney,9212345671,4.2,101 Shivaji Nagar,Maharashtra,Solapur
+H042,Kongu Kidney Institute,Kidney,9223456782,4.6,55 Textile Road,Tamil Nadu,Erode
+H043,Coastal Renal Hub,Kidney,9234567893,4.4,76 Lighthouse Street,Karnataka,Udupi
+H044,Ram Kidney Hospital,Kidney,9245678904,4.7,21 Ayodhya Marg,Uttar Pradesh,Gorakhpur
+H045,Bardhaman Renal Research,Kidney,9256789015,4.5,34 GT Road,West Bengal,Bardhaman
+H046,Thar Kidney Center,Kidney,9267890126,4.3,67 Sand Dunes Road,Rajasthan,Barmer
+H048,Five Rivers Renal Center,Kidney,9289012348,4.4,12 Sutlej Street,Punjab,Bathinda
+H049,Spice Coast Kidney Care,Kidney,9290123459,4.7,101 Fort Kochi,Kerala,Kannur
+H050,Chambal Renal Hospital,Kidney,9301234560,4.5,56 Riverfront,Madhya Pradesh,Bhind
+H051,Saurashtra Kidney Clinic,Kidney,9278901237,4.6,89 Porbandar Road,Gujarat,Bhavnagar
+H052,Five Rivers Renal Center,Kidney,9289012348,4.4,12 Sutlej Street,Punjab,Bathinda
+H053,Spice Coast Kidney Care,Kidney,9290123459,4.7,101 Fort Kochi,Kerala,Kannur
+H054,Chambal Renal Hospital,Kidney,9301234560,4.5,56 Riverfront,Madhya Pradesh,Bhind
+H055,Vidarbha Kidney Center,Kidney,9312345671,4.3,12 Cotton Market,Maharashtra,Akola
+H056,Meenakshi Renal Institute,Kidney,9323456782,4.6,45 Temple Street,Tamil Nadu,Thanjavur
+H057,Sharada Kidney Hospital,Kidney,9334567893,4.4,78 University Road,Karnataka,Belagavi
+H058,Kashi Renal Clinic,Kidney,9345678904,4.7,101 Vishwanath Gali,Uttar Pradesh,Prayagraj
+H059,Shantiniketan Kidney Care,Kidney,9356789015,4.5,34 Tagore Avenue,West Bengal,Bolpur
+H060,Desert Rose Renal Center,Kidney,9367890126,4.3,56 Palace Road,Rajasthan,Kota
+H061,Sabarmati Kidney Hub,Kidney,9378901237,4.6,89 Riverfront,Gujarat,Mehsana
+H062,Guru Nanak Renal Center,Kidney,9389012348,4.4,12 GT Road,Punjab,Jalandhar
+H063,Alleppey Kidney Institute,Kidney,9390123459,4.7,67 Canal Road,Kerala,Alappuzha
+H064,Mahakal Renal Hospital,Kidney,9401234560,4.5,88 Temple Marg,Madhya Pradesh,Ujjain
+H065,Konkan Kidney Clinic,Kidney,9412345671,4.2,101 Sea View,Maharashtra,Ratnagiri
+H066,Cauvery Renal Center,Kidney,9423456782,4.6,55 Riverbank Road,Tamil Nadu,Karur
+H067,Chalukya Kidney Institute,Kidney,9434567893,4.4,29 Fort Circle,Karnataka,Bijapur
+H068,Awadh Renal Hospital,Kidney,9445678904,4.7,76 Residency Road,Uttar Pradesh,Faizabad
+H069,North Bengal Kidney Care,Kidney,9456789015,4.5,90 Hill Cart Road,West Bengal,Siliguri
+H070,Pushkar Renal Center,Kidney,9467890126,4.3,12 Lake View,Rajasthan,Ajmer
+H071,Girnar Kidney Institute,Kidney,9478901237,4.6,45 Temple Street,Gujarat,Junagadh
+H072,Doaba Renal Hospital,Kidney,9489012348,4.4,78 Market Road,Punjab,Hoshiarpur
+H073,Periyar Kidney Clinic,Kidney,9490123459,4.7,101 Forest Lane,Kerala,Palakkad
+H074,Chitrakoot Renal Hub,Kidney,9501234560,4.5,34 Ashram Road,Madhya Pradesh,Satna
+H075,Marathwada Kidney Center,Kidney,9512345671,4.2,56 Aurangabad Road,Maharashtra,Latur
+H076,Nilgiri Renal Institute,Kidney,9523456782,4.6,89 Hill View,Tamil Nadu,Ooty
+H077,Tungabhadra Kidney Hospital,Kidney,9534567893,4.4,22 River Road,Karnataka,Hospet
+H078,Sangam Kidney Clinic,Kidney,9545678904,4.7,67 Sangam Ghat,Uttar Pradesh,Mirzapur
+H079,Howrah Renal Center,Kidney,9556789015,4.5,101 Bridge Road,West Bengal,Howrah
+H080,Sundarbans Kidney Center,Kidney,9567890126,4.3,12 Mangrove Lane,West Bengal,Canning
+H081,Desert Pearl Renal Institute,Kidney,9578901237,4.6,45 Dune Road,Rajasthan,Jaisalmer
+H082,Narmada Kidney Hospital,Kidney,9589012348,4.4,78 Riverside,Madhya Pradesh,Hoshangabad
+H083,Malwa Valley Kidney Care,Kidney,9590123459,4.7,101 Valley View,Madhya Pradesh,Khandwa
+H084,Konkan Coast Renal Center,Kidney,9601234560,4.5,34 Sea Breeze Lane,Maharashtra,Sindhudurg
+H085,Thanjai Kidney Clinic,Kidney,9612345671,4.2,56 Temple Street,Tamil Nadu,Thiruvarur
+H086,Western Ghats Renal Center,Kidney,9623456782,4.6,89 Hilltop Road,Kerala,Wayanad
+H087,Vindhya Hills Kidney Center,Kidney,9634567893,4.4,22 Ridge Road,Madhya Pradesh,Rewa
+H088,Doon Valley Renal Hospital,Kidney,9645678904,4.7,67 Forest Avenue,Uttar Pradesh,Saharanpur
+H089,Satyamev Kidney Hospital,Kidney,9656789015,4.5,88 Justice Marg,Gujarat,Bhuj
+H090,Royal Renal Institute,Kidney,9667890126,4.3,12 Palace Road,Punjab,Mohali
+H091,Backwater Bloom Kidney Care,Kidney,9678901237,4.6,45 Lake View,Kerala,Kollam
+H092,Chambal River Renal Center,Kidney,9689012348,4.4,78 Riverside Drive,Madhya Pradesh,Morena
+H093,Maratha Shield Kidney Center,Kidney,9690123459,4.7,101 Shivaji Path,Maharashtra,Nashik
+H094,Kongu Valley Renal Institute,Kidney,9701234560,4.5,34 Textile Avenue,Tamil Nadu,Namakkal
+H095,Sahyadri Kidney Hospital,Kidney,9712345671,4.2,56 Hill Station Road,Maharashtra,Satara
+H096,Eastern Lotus Kidney Care,Kidney,9723456782,4.6,89 Garden Street,West Bengal,Kharagpur
+H098,Ganges Renal Hospital,Kidney,9745678904,4.7,78 Ghat Road,Uttar Pradesh,Fatehpur
+H099,Saurashtra Renal Hub,Kidney,9756789015,4.5,101 Coastal Road,Gujarat,Jamnagar
+H100,Eastern Promise Kidney Care,Kidney,9767890126,4.4,34 Sunrise Lane,West Bengal,Durgapur
+H001,VisionCare Eye Hospital,Eye,9812345670,4.6,12 MG Road,Maharashtra,Mumbai
+H002,Lotus Eye Institute,Eye,9823456781,4.4,45 Nehru Nagar,Tamil Nadu,Chennai
+H003,Apex Eye Center,Eye,9834567892,4.7,88 Residency Road,Karnataka,Bengaluru
+H004,Hope Vision Hospital,Eye,9845678903,4.3,21 Civil Lines,Uttar Pradesh,Lucknow
+H005,Phoenix Eye Clinic,Eye,9856789014,4.5,7 Park Street,West Bengal,Kolkata
+H006,Shakti Eye Research,Eye,9867890125,4.4,33 Gandhi Marg,Rajasthan,Jaipur
+H007,Nirvana Vision Institute,Eye,9878901236,4.6,19 Patel Chowk,Gujarat,Ahmedabad
+H008,Zenith Eye Hospital,Eye,9889012347,4.8,56 Sector 18,Punjab,Chandigarh
+H009,Omega Eye Care,Eye,9890123458,4.2,101 Ring Road,Kerala,Kochi
+H010,Triveni Vision Hub,Eye,9901234569,4.5,67 Station Road,Madhya Pradesh,Bhopal
+H011,Blue Ribbon Eye Center,Eye,9912345670,4.3,22 Tilak Road,Maharashtra,Pune
+H012,Southern Eye Clinic,Eye,9923456781,4.6,89 Anna Salai,Tamil Nadu,Coimbatore
+H013,Unity Eye Hospital,Eye,9934567892,4.4,34 MG Layout,Karnataka,Mysuru
+H014,Healing Touch Eye Care,Eye,9945678903,4.7,76 Gomti Nagar,Uttar Pradesh,Kanpur
+H015,Eastern Hope Eye Center,Eye,9956789014,4.2,55 Salt Lake,West Bengal,Asansol
+H016,Rajputana Vision Institute,Eye,9967890125,4.5,90 MI Road,Rajasthan,Udaipur
+H017,Sardar Eye Center,Eye,9978901236,4.3,12 Ring Road,Gujarat,Surat
+H018,Golden Leaf Eye Hospital,Eye,9989012347,4.6,78 Sector 22,Punjab,Amritsar
+H019,Malabar Vision Hub,Eye,9990123458,4.4,65 MG Road,Kerala,Thiruvananthapuram
+H020,Vindhya Eye Clinic,Eye,9001234560,4.7,43 MP Nagar,Madhya Pradesh,Indore
+H021,Western Eye Center,Eye,9012345671,4.5,11 FC Road,Maharashtra,Nagpur
+H022,Pearl Vision Institute,Eye,9023456782,4.3,66 Race Course,Tamil Nadu,Madurai
+H023,Kaveri Eye Hospital,Eye,9034567893,4.6,29 Lalbagh Road,Karnataka,Hubli
+H024,Ayodhya Eye Care,Eye,9045678904,4.4,88 Ram Path,Uttar Pradesh,Ayodhya
+H025,Bengal Vision Research,Eye,9056789015,4.7,101 Howrah Bridge,West Bengal,Howrah
+H026,Desert Bloom Eye Clinic,Eye,9067890126,4.3,23 C-Scheme,Rajasthan,Jodhpur
+H027,Riverfront Eye Care,Eye,9078901237,4.6,77 Sabarmati Road,Gujarat,Gandhinagar
+H028,Golden Temple Eye Center,Eye,9089012348,4.4,12 Heritage Street,Punjab,Patiala
+H029,Backwater Eye Institute,Eye,9090123459,4.7,34 Marine Drive,Kerala,Kozhikode
+H030,Vindhya Vision Center,Eye,9101234560,4.5,56 Rajwada Chowk,Madhya Pradesh,Gwalior
+H031,Deccan Eye Hospital,Eye,9112345671,4.2,89 FC Road,Maharashtra,Aurangabad
+H032,Southern Star Eye Care,Eye,9123456782,4.6,101 Gandhi Road,Tamil Nadu,Tiruchirappalli
+H033,Silicon Valley Eye Clinic,Eye,9134567893,4.4,22 Tech Park,Karnataka,Mangaluru
+H034,Ganga Vision Clinic,Eye,9145678904,4.7,78 River View,Uttar Pradesh,Varanasi
+H035,Eastern Horizon Eye Hub,Eye,9156789015,4.5,90 Hill Road,West Bengal,Darjeeling
+H036,Rajput Eye Center,Eye,9167890126,4.3,33 Fort Road,Rajasthan,Bikaner
+H037,Diamond Vision Institute,Eye,9178901237,4.6,12 GIDC Circle,Gujarat,Rajkot
+H038,Majestic Eye Hospital,Eye,9189012348,4.4,45 Mall Road,Punjab,Ludhiana
+H039,Coconut Grove Eye Care,Eye,9190123459,4.7,67 Beach Road,Kerala,Alappuzha
+H040,Malwa Eye Clinic,Eye,9201234560,4.5,88 MG Road,Madhya Pradesh,Jabalpur
+H041,Maratha Vision Center,Eye,9212345671,4.2,101 Shivaji Nagar,Maharashtra,Solapur
+H042,Kongu Eye Institute,Eye,9223456782,4.6,55 Textile Road,Tamil Nadu,Erode
+H043,Coastal Eye Hub,Eye,9234567893,4.4,76 Lighthouse Street,Karnataka,Udupi
+H044,Ram Eye Hospital,Eye,9245678904,4.7,21 Ayodhya Marg,Uttar Pradesh,Gorakhpur
+H045,Bardhaman Vision Research,Eye,9256789015,4.5,34 GT Road,West Bengal,Bardhaman
+H046,Thar Eye Center,Eye,9267890126,4.3,67 Sand Dunes Road,Rajasthan,Barmer
+H047,Saurashtra Eye Clinic,Eye,9278901237,4.6,89 Porbandar Road,Gujarat,Bhavnagar
+H048,Five Rivers Eye Center,Eye,9289012348,4.4,12 Sutlej Street,Punjab,Bathinda
+H049,Spice Coast Vision Care,Eye,9290123459,4.7,101 Fort Kochi,Kerala,Kannur
+H050,Chambal Eye Hospital,Eye,9301234560,4.5,56 Riverfront,Madhya Pradesh,Bhind
+H051,Vidarbha Eye Center,Eye,9312345671,4.3,12 Cotton Market,Maharashtra,Akola
+H052,Meenakshi Vision Institute,Eye,9323456782,4.6,45 Temple Street,Tamil Nadu,Thanjavur
+H053,Sharada Eye Hospital,Eye,9334567893,4.4,78 University Road,Karnataka,Belagavi
+H054,Kashi Vision Clinic,Eye,9345678904,4.7,101 Vishwanath Gali,Uttar Pradesh,Prayagraj
+H055,Shantiniketan Eye Care,Eye,9356789015,4.5,34 Tagore Avenue,West Bengal,Bolpur
+H056,Desert Rose Eye Center,Eye,9367890126,4.3,56 Palace Road,Rajasthan,Kota
+H057,Sabarmati Vision Hub,Eye,9378901237,4.6,89 Riverfront,Gujarat,Mehsana
+H058,Guru Nanak Eye Center,Eye,9389012348,4.4,12 GT Road,Punjab,Jalandhar
+H059,Alleppey Eye Institute,Eye,9390123459,4.7,67 Canal Road,Kerala,Alappuzha
+H060,Mahakal Vision Hospital,Eye,9401234560,4.5,88 Temple Marg,Madhya Pradesh,Ujjain
+H061,Konkan Eye Clinic,Eye,9412345671,4.2,101 Sea View,Maharashtra,Ratnagiri
+H062,Cauvery Eye Center,Eye,9423456782,4.6,55 Riverbank Road,Tamil Nadu,Karur
+H063,Chalukya Vision Institute,Eye,9434567893,4.4,29 Fort Circle,Karnataka,Bijapur
+H064,Awadh Eye Hospital,Eye,9445678904,4.7,76 Residency Road,Uttar Pradesh,Faizabad
+H065,North Bengal Eye Care,Eye,9456789015,4.5,90 Hill Cart Road,West Bengal,Siliguri
+H066,Pushkar Vision Center,Eye,9467890126,4.3,12 Lake View,Rajasthan,Ajmer
+H067,Girnar Eye Institute,Eye,9478901237,4.6,45 Temple Street,Gujarat,Junagadh
+H068,Doaba Eye Hospital,Eye,9489012348,4.4,78 Market Road,Punjab,Hoshiarpur
+H069,Periyar Vision Clinic,Eye,9490123459,4.7,101 Forest Lane,Kerala,Palakkad
+H070,Chitrakoot Eye Hub,Eye,9501234560,4.5,34 Ashram Road,Madhya Pradesh,Satna
+H071,Marathwada Eye Center,Eye,9512345671,4.2,56 Aurangabad Road,Maharashtra,Latur
+H072,Nilgiri Vision Institute,Eye,9523456782,4.6,89 Hill View,Tamil Nadu,Ooty
+H073,Tungabhadra Eye Hospital,Eye,9534567893,4.4,22 River Road,Karnataka,Hospet
+H074,Sangam Eye Clinic,Eye,9545678904,4.7,67 Sangam Ghat,Uttar Pradesh,Mirzapur
+H075,Howrah Eye Center,Eye,9556789015,4.5,101 Bridge Road,West Bengal,Howrah
+H076,Sundarbans Vision Center,Eye,9567890126,4.3,12 Mangrove Lane,West Bengal,Canning
+H077,Desert Pearl Eye Institute,Eye,9578901237,4.6,45 Dune Road,Rajasthan,Jaisalmer
+H078,Narmada Eye Hospital,Eye,9589012348,4.4,78 Riverside,Madhya Pradesh,Hoshangabad
+H079,Malwa Valley Eye Care,Eye,9590123459,4.7,101 Valley View,Madhya Pradesh,Khandwa
+H080,Konkan Coast Eye Center,Eye,9601234560,4.5,34 Sea Breeze Lane,Maharashtra,Sindhudurg
+H081,Thanjai Eye Clinic,Eye,9612345671,4.2,56 Temple Street,Tamil Nadu,Thiruvarur
+H082,Western Ghats Vision Center,Eye,9623456782,4.6,89 Hilltop Road,Kerala,Wayanad
+H083,Vindhya Hills Eye Center,Eye,9634567893,4.4,22 Ridge Road,Madhya Pradesh,Rewa
+H084,Doon Valley Eye Hospital,Eye,9645678904,4.7,67 Forest Avenue,Uttar Pradesh,Saharanpur
+H085,Satyamev Eye Hospital,Eye,9656789015,4.5,88 Justice Marg,Gujarat,Bhuj
+H086,Royal Vision Institute,Eye,9667890126,4.3,12 Palace Road,Punjab,Mohali
+H087,Backwater Bloom Eye Care,Eye,9678901237,4.6,45 Lake View,Kerala,Kollam
+H088,Chambal River Eye Center,Eye,9689012348,4.4,78 Riverside Drive,Madhya Pradesh,Morena
+H089,Maratha Shield Eye Center,Eye,9690123459,4.7,101 Shivaji Path,Maharashtra,Nashik
+H090,Kongu Valley Vision Institute,Eye,9701234560,4.5,34 Textile Avenue,Tamil Nadu,Namakkal
+H091,Sahyadri Eye Hospital,Eye,9712345671,4.2,56 Hill Station Road,Maharashtra,Satara
+H092,Eastern Lotus Eye Care,Eye,9723456782,4.6,89 Garden Street,West Bengal,Kharagpur
+H093,Rajput Legacy Eye Center,Eye,9734567893,4.4,22 Fort Marg,Rajasthan,Chittorgarh
+H094,Malabar Coast Eye Clinic,Eye,9745678904,4.7,67 Beachside Road,Kerala,Malappuram
+H095,Vindhya Vision Research,Eye,9756789015,4.5,88 Science Park,Madhya Pradesh,Sagar
+H096,Golden Horizon Eye Center,Eye,9767890126,4.3,12 Sunrise Avenue,Punjab,Firozpur
+H097,Cauvery River Eye Institute,Eye,9778901237,4.6,45 Riverbank Street,Tamil Nadu,Nagapattinam
+H098,Ganges Eye Hospital,Eye,9789012348,4.4,78 Ghat Road,Uttar Pradesh,Fatehpur
+H099,Saurashtra Vision Hub,Eye,9790123459,4.7,101 Coastal Road,Gujarat,Jamnagar
+H100,Eastern Promise Eye Care,Eye,9801234560,4.5,34 Sunrise Lane,West Bengal,Durgapur
+H001,NeuroCare Institute,Neurology,9812345670,4.6,12 MG Road,Maharashtra,Mumbai
+H002,Lotus Brain Center,Neurology,9823456781,4.4,45 Nehru Nagar,Tamil Nadu,Chennai
+H003,Apex Neuro Hospital,Neurology,9834567892,4.7,88 Residency Road,Karnataka,Bengaluru
+H004,Hope Neuro Clinic,Neurology,9845678903,4.3,21 Civil Lines,Uttar Pradesh,Lucknow
+H005,Phoenix Brain Institute,Neurology,9856789014,4.5,7 Park Street,West Bengal,Kolkata
+H006,Shakti Neuro Research,Neurology,9867890125,4.4,33 Gandhi Marg,Rajasthan,Jaipur
+H007,Nirvana Brain Hospital,Neurology,9878901236,4.6,19 Patel Chowk,Gujarat,Ahmedabad
+H008,Zenith Neuro Center,Neurology,9889012347,4.8,56 Sector 18,Punjab,Chandigarh
+H009,Omega Neuro Care,Neurology,9890123458,4.2,101 Ring Road,Kerala,Kochi
+H010,Triveni Brain Hub,Neurology,9901234569,4.5,67 Station Road,Madhya Pradesh,Bhopal
+H011,Blue Ribbon Neuro Center,Neurology,9912345670,4.3,22 Tilak Road,Maharashtra,Pune
+H012,Southern Neuro Clinic,Neurology,9923456781,4.6,89 Anna Salai,Tamil Nadu,Coimbatore
+H013,Unity Brain Hospital,Neurology,9934567892,4.4,34 MG Layout,Karnataka,Mysuru
+H014,Healing Touch Neuro Care,Neurology,9945678903,4.7,76 Gomti Nagar,Uttar Pradesh,Kanpur
+H015,Eastern Hope Neuro Center,Neurology,9956789014,4.2,55 Salt Lake,West Bengal,Asansol
+H016,Rajputana Neuro Institute,Neurology,9967890125,4.5,90 MI Road,Rajasthan,Udaipur
+H017,Sardar Brain Center,Neurology,9978901236,4.3,12 Ring Road,Gujarat,Surat
+H018,Golden Leaf Neuro Hospital,Neurology,9989012347,4.6,78 Sector 22,Punjab,Amritsar
+H019,Malabar Brain Hub,Neurology,9990123458,4.4,65 MG Road,Kerala,Thiruvananthapuram
+H020,Vindhya Neuro Clinic,Neurology,9001234560,4.7,43 MP Nagar,Madhya Pradesh,Indore
+H021,Western Neuro Center,Neurology,9012345671,4.5,11 FC Road,Maharashtra,Nagpur
+H022,Pearl Brain Institute,Neurology,9023456782,4.3,66 Race Course,Tamil Nadu,Madurai
+H023,Kaveri Neuro Hospital,Neurology,9034567893,4.6,29 Lalbagh Road,Karnataka,Hubli
+H024,Ayodhya Neuro Care,Neurology,9045678904,4.4,88 Ram Path,Uttar Pradesh,Ayodhya
+H025,Bengal Neuro Research,Neurology,9056789015,4.7,101 Howrah Bridge,West Bengal,Howrah
+H026,Desert Bloom Neuro Clinic,Neurology,9067890126,4.3,23 C-Scheme,Rajasthan,Jodhpur
+H027,Riverfront Brain Care,Neurology,9078901237,4.6,77 Sabarmati Road,Gujarat,Gandhinagar
+H028,Golden Temple Neuro Center,Neurology,9089012348,4.4,12 Heritage Street,Punjab,Patiala
+H029,Backwater Neuro Institute,Neurology,9090123459,4.7,34 Marine Drive,Kerala,Kozhikode
+H030,Vindhya Brain Center,Neurology,9101234560,4.5,56 Rajwada Chowk,Madhya Pradesh,Gwalior
+H031,Deccan Neuro Hospital,Neurology,9112345671,4.2,89 FC Road,Maharashtra,Aurangabad
+H032,Southern Star Neuro Care,Neurology,9123456782,4.6,101 Gandhi Road,Tamil Nadu,Tiruchirappalli
+H033,Silicon Valley Brain Clinic,Neurology,9134567893,4.4,22 Tech Park,Karnataka,Mangaluru
+H034,Ganga Neuro Clinic,Neurology,9145678904,4.7,78 River View,Uttar Pradesh,Varanasi
+H035,Eastern Horizon Neuro Hub,Neurology,9156789015,4.5,90 Hill Road,West Bengal,Darjeeling
+H036,Rajput Neuro Center,Neurology,9167890126,4.3,33 Fort Road,Rajasthan,Bikaner
+H037,Diamond Brain Institute,Neurology,9178901237,4.6,12 GIDC Circle,Gujarat,Rajkot
+H038,Majestic Neuro Hospital,Neurology,9189012348,4.4,45 Mall Road,Punjab,Ludhiana
+H039,Coconut Grove Neuro Care,Neurology,9190123459,4.7,67 Beach Road,Kerala,Alappuzha
+H040,Malwa Neuro Clinic,Neurology,9201234560,4.5,88 MG Road,Madhya Pradesh,Jabalpur
+H041,Maratha Brain Center,Neurology,9212345671,4.2,101 Shivaji Nagar,Maharashtra,Solapur
+H042,Kongu Neuro Institute,Neurology,9223456782,4.6,55 Textile Road,Tamil Nadu,Erode
+H043,Coastal Brain Hub,Neurology,9234567893,4.4,76 Lighthouse Street,Karnataka,Udupi
+H044,Ram Neuro Hospital,Neurology,9245678904,4.7,21 Ayodhya Marg,Uttar Pradesh,Gorakhpur
+H045,Bardhaman Brain Research,Neurology,9256789015,4.5,34 GT Road,West Bengal,Bardhaman
+H046,Thar Neuro Center,Neurology,9267890126,4.3,67 Sand Dunes Road,Rajasthan,Barmer
+H047,Saurashtra Neuro Clinic,Neurology,9278901237,4.6,89 Porbandar Road,Gujarat,Bhavnagar
+H048,Five Rivers Neuro Center,Neurology,9289012348,4.4,12 Sutlej Street,Punjab,Bathinda
+H049,Spice Coast Neuro Care,Neurology,9290123459,4.7,101 Fort Kochi,Kerala,Kannur
+H050,Chambal Neuro Hospital,Neurology,9301234560,4.5,56 Riverfront,Madhya Pradesh,Bhind
+H051,Vidarbha Neuro Center,Neurology,9312345671,4.3,12 Cotton Market,Maharashtra,Akola
+H052,Meenakshi Brain Institute,Neurology,9323456782,4.6,45 Temple Street,Tamil Nadu,Thanjavur
+H053,Sharada Neuro Hospital,Neurology,9334567893,4.4,78 University Road,Karnataka,Belagavi
+H054,Kashi Brain Clinic,Neurology,9345678904,4.7,101 Vishwanath Gali,Uttar Pradesh,Prayagraj
+H055,Shantiniketan Neuro Care,Neurology,9356789015,4.5,34 Tagore Avenue,West Bengal,Bolpur
+H056,Desert Rose Neuro Center,Neurology,9367890126,4.3,56 Palace Road,Rajasthan,Kota
+H057,Sabarmati Brain Hub,Neurology,9378901237,4.6,89 Riverfront,Gujarat,Mehsana
+H058,Guru Nanak Neuro Center,Neurology,9389012348,4.4,12 GT Road,Punjab,Jalandhar
+H059,Alleppey Neuro Institute,Neurology,9390123459,4.7,67 Canal Road,Kerala,Alappuzha
+H060,Mahakal Brain Hospital,Neurology,9401234560,4.5,88 Temple Marg,Madhya Pradesh,Ujjain
+H061,Konkan Neuro Clinic,Neurology,9412345671,4.2,101 Sea View,Maharashtra,Ratnagiri
+H062,Cauvery Neuro Center,Neurology,9423456782,4.6,55 Riverbank Road,Tamil Nadu,Karur
+H063,Chalukya Brain Institute,Neurology,9434567893,4.4,29 Fort Circle,Karnataka,Bijapur
+H064,Awadh Neuro Hospital,Neurology,9445678904,4.7,76 Residency Road,Uttar Pradesh,Faizabad
+H065,North Bengal Neuro Care,Neurology,9456789015,4.5,90 Hill Cart Road,West Bengal,Siliguri
+H066,Pushkar Brain Center,Neurology,9467890126,4.3,12 Lake View,Rajasthan,Ajmer
+H067,Girnar Neuro Institute,Neurology,9478901237,4.6,45 Temple Street,Gujarat,Junagadh
+H068,Doaba Neuro Hospital,Neurology,9489012348,4.4,78 Market Road,Punjab,Hoshiarpur
+H069,Periyar Brain Clinic,Neurology,9490123459,4.7,101 Forest Lane,Kerala,Palakkad
+H070,Chitrakoot Neuro Hub,Neurology,9501234560,4.5,34 Ashram Road,Madhya Pradesh,Satna
+H071,Marathwada Neuro Center,Neurology,9512345671,4.2,56 Aurangabad Road,Maharashtra,Latur
+H072,Nilgiri Brain Institute,Neurology,9523456782,4.6,89 Hill View,Tamil Nadu,Ooty
+H073,Tungabhadra Neuro Hospital,Neurology,9534567893,4.4,22 River Road,Karnataka,Hospet
+H074,Sangam Neuro Clinic,Neurology,9545678904,4.7,67 Sangam Ghat,Uttar Pradesh,Mirzapur
+H075,Howrah Neuro Center,Neurology,9556789015,4.5,101 Bridge Road,West Bengal,Howrah
+H076,Sundarbans Brain Center,Neurology,9567890126,4.3,12 Mangrove Lane,West Bengal,Canning
+H077,Desert Pearl Neuro Institute,Neurology,9578901237,4.6,45 Dune Road,Rajasthan,Jaisalmer
+H078,Narmada Neuro Hospital,Neurology,9589012348,4.4,78 Riverside,Madhya Pradesh,Hoshangabad
+H079,Malwa Valley Neuro Care,Neurology,9590123459,4.7,101 Valley View,Madhya Pradesh,Khandwa
+H080,Konkan Coast Brain Center,Neurology,9601234560,4.5,34 Sea Breeze Lane,Maharashtra,Sindhudurg
+H081,Thanjai Neuro Clinic,Neurology,9612345671,4.2,56 Temple Street,Tamil Nadu,Thiruvarur
+H082,Western Ghats Brain Center,Neurology,9623456782,4.6,89 Hilltop Road,Kerala,Wayanad
+H083,Vindhya Hills Neuro Center,Neurology,9634567893,4.4,22 Ridge Road,Madhya Pradesh,Rewa
+H084,Doon Valley Neuro Hospital,Neurology,9645678904,4.7,67 Forest Avenue,Uttar Pradesh,Saharanpur
+H085,Satyamev Neuro Hospital,Neurology,9656789015,4.5,88 Justice Marg,Gujarat,Bhuj
+H086,Royal Brain Institute,Neurology,9667890126,4.3,12 Palace Road,Punjab,Mohali
+H087,Backwater Bloom Neuro Care,Neurology,9678901237,4.6,45 Lake View,Kerala,Kollam
+H088,Chambal River Neuro Center,Neurology,9689012348,4.4,78 Riverside Drive,Madhya Pradesh,Morena
+H089,Maratha Shield Neuro Center,Neurology,9690123459,4.7,101 Shivaji Path,Maharashtra,Nashik
+H090,Kongu Valley Brain Institute,Neurology,9701234560,4.5,34 Textile Avenue,Tamil Nadu,Namakkal
+H091,Sahyadri Neuro Hospital,Neurology,9712345671,4.2,56 Hill Station Road,Maharashtra,Satara
+H092,Eastern Lotus Neuro Care,Neurology,9723456782,4.6,89 Garden Street,West Bengal,Kharagpur
+H093,Rajput Legacy Neuro Center,Neurology,9734567893,4.4,22 Fort Marg,Rajasthan,Chittorgarh
+H094,Malabar Coast Neuro Clinic,Neurology,9745678904,4.7,67 Beachside Road,Kerala,Malappuram
+H095,Vindhya Neuro Research,Neurology,9756789015,4.5,88 Science Park,Madhya Pradesh,Sagar
+H096,Golden Horizon Brain Center,Neurology,9767890126,4.3,12 Sunrise Avenue,Punjab,Firozpur
+H097,Cauvery River Neuro Institute,Neurology,9778901237,4.6,45 Riverbank Street,Tamil Nadu,Nagapattinam
+H098,Ganges Neuro Hospital,Neurology,9789012348,4.4,78 Ghat Road,Uttar Pradesh,Fatehpur
+H099,Saurashtra Neuro Hub,Neurology,9790123459,4.7,101 Coastal Road,Gujarat,Jamnagar
+H100,Eastern Promise Neuro Care,Neurology,9801234560,4.5,34 Sunrise Lane,West Bengal,Durgapur
