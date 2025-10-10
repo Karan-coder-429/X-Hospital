@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>X Hospital Portal</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box }
+    html, body {
+      height:100%;
+      width:100%;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right,#e6f2ff,#f0f8ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;       /* Thoda chhota kiya */
+      padding: 40px 30px;     /* Reduced padding */
+      border: 2px solid #007bff;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 0 30px rgba(0, 123, 255, 0.3);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 { color: #007bff; margin-bottom: 25px; font-size: 34px }
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { background: #0056b3 }
+    .toggle-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .toggle-btns button {
+      width: 48%;
+      padding: 14px;
+      font-size: 18px;
+    }
+    .form-section {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .form-section.active { display: flex }
+    form { width: 100% }
+    input, select {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      margin-bottom: 20px;
+      border: 1px solid #007bff;
+      border-radius: 10px;
+      font-size: 20px;      /* Input field bada hi rahega */
+    }
+    form button {
+      width: 100%;
+      padding: 18px;
+      font-size: 20px;
+    }
+
+    #loginSelect button[type="button"],
+    #signupSelect button[type="button"] {
+      width: 100%;
+      padding: 18px;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px) }
+      to { opacity: 1; transform: translateY(0) }
+    }
+
+    #responseBox {
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      background: #f9f9f9;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      color: #333;
+      font-size: 16px;
+      text-align: left;
+      font-family: Consolas, monospace;
+      white-space: pre-wrap;
+      word-break: break-word;
+      box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+      margin-top: 10px;
+      min-height: 100px;
+    }
+
+    @media(max-width:480px) {
+      .container { padding: 30px 20px }
+      input, select, form button { font-size: 16px; padding: 14px }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>X Hospital</h1>
+    <div class="toggle-btns">
+      <button onclick="showForm('loginSelect')">Login</button>
+      <button onclick="showForm('signupSelect')">Signup</button>
+    </div>
+
+    <!-- Role Selectors -->
+    <div id="loginSelect" class="form-section active">
+      <select id="loginRoleDropdown" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="doctor">Doctor</option>
+        <option value="user">User</option>
+      </select>
+      <button type="button" onclick="handleLoginRole()">Next</button>
+    </div>
+
+    <div id="signupSelect" class="form-section">
+      <select id="signupRoleDropdown" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="doctor">Doctor</option>
+        <option value="user">User</option>
+      </select>
+      <button type="button" onclick="handleSignupRole()">Next</button>
+    </div>
+
+    <!-- Login Forms -->
+    <div id="doctorLoginForm" class="form-section">
+      <form id="loginDoctorForm">
+        <input type="email" placeholder="Doctor Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login Doctor</button>
+      </form>
+    </div>
+
+    <div id="userLoginForm" class="form-section">
+      <form id="loginUserForm">
+        <input type="email" placeholder="User Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login User</button>
+      </form>
+    </div>
+
+    <!-- Signup Forms -->
+    <div id="doctorSignupFormSection" class="form-section">
+      <form id="doctorSignupForm">
+        <input type="text"    placeholder="Full Name"               required />
+        <input type="text"    placeholder="Hospital Name"           required />
+        <input type="text"    placeholder="Doctor Specialization"   required />
+        <input type="tel"     placeholder="Mobile Number"           required />
+        <input type="password"placeholder="Create Strong Password"  required />
+        <input type="email"   placeholder="Email ID"                required />
+        <button type="submit">Register Doctor</button>
+      </form>
+    </div>
+
+    <div id="userSignupFormSection" class="form-section">
+      <form id="userSignupForm">
+        <input type="text"     placeholder="User Name"               required />
+        <input type="tel"      placeholder="Mobile Number"           required />
+        <input type="email"    placeholder="Email ID"                required />
+        <input type="password" placeholder="Create Strong Password"  required />
+        <button type="submit">Register User</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Output Response Box -->
+  <div id="responseBox">Server response will appear here.</div>
+
+  <script>
+    function showForm(id){
+      document.querySelectorAll('.form-section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      // Clear response when switching forms
+      document.getElementById("responseBox").innerText = "Server response will appear here.";
+    }
+
+    function handleLoginRole(){
+      const role = document.getElementById("loginRoleDropdown").value;
+      showForm(role === "doctor" ? "doctorLoginForm" : "userLoginForm");
+    }
+
+    function handleSignupRole(){
+      const role = document.getElementById("signupRoleDropdown").value;
+      showForm(role === "doctor" ? "doctorSignupFormSection" : "userSignupFormSection");
+    }
+
+    async function postFormData(url, formData){
+      const res = await fetch(url, { method: "POST", body: formData });
+      const text = await res.text();  // text response expected
+      if (!res.ok) throw new Error(text);
+      return text;
+    }
+
+    function displayResponse(message){
+      let formatted = message;
+      try {
+        const json = JSON.parse(message);
+        formatted = JSON.stringify(json, null, 2);
+      } catch (e) {
+        // not JSON, leave as is
+      }
+      document.getElementById("responseBox").innerText = formatted;
+    }
+
+    // Doctor Login
+    document.getElementById("loginDoctorForm").addEventListener("submit", async e => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append("email", e.target[0].value);
+      fd.append("password", e.target[1].value);
+      try {
+        const resp = await postFormData("http://127.0.0.1:8000/login/doctor", fd);
+        displayResponse(resp);
+      } catch (err) {
+        displayResponse("Doctor login error: " + err.message);
+      }
+    });
+
+    // User Login
+    document.getElementById("loginUserForm").addEventListener("submit", async e => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append("email_id", e.target[0].value);
+      fd.append("password", e.target[1].value);
+      try {
+        const resp = await postFormData("http://127.0.0.1:8000/login/user", fd);
+        displayResponse(resp);
+      } catch (err) {
+        displayResponse("User login error: " + err.message);
+      }
+    });
+
+    // Doctor Signup
+    document.getElementById("doctorSignupForm").addEventListener("submit", async e => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append("doctor_name", e.target[0].value);
+      fd.append("hospital_name", e.target[1].value);
+      fd.append("specialization", e.target[2].value);
+      fd.append("mobile_number", e.target[3].value);
+      fd.append("password", e.target[4].value);
+      fd.append("email", e.target[5].value);
+      try {
+        const resp = await postFormData("http://127.0.0.1:8000/signup/doctor", fd);
+        displayResponse(resp);
+      } catch (err) {
+        displayResponse("Doctor signup error: " + err.message);
+      }
+    });
+
+    // User Signup
+    document.getElementById("userSignupForm").addEventListener("submit", async e => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append("name", e.target[0].value);
+      fd.append("mobile_number", e.target[1].value);
+      fd.append("email_id", e.target[2].value);
+      fd.append("password", e.target[3].value);
+      try {
+        const resp = await postFormData("http://127.0.0.1:8000/signup/user", fd);
+        displayResponse(resp);
+      } catch (err) {
+        displayResponse("User signup error: " + err.message);
+      }
+    });
+  </script>
+</body>
+</html>
+
+
