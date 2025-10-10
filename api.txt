@@ -1,0 +1,19 @@
+# here the api endpoint
+
+Recomdation Ml Model : http://127.0.0.1:8000/recommend
+
+Search Bar : http://127.0.0.1:8000/search
+
+login user: http://127.0.0.1:8000/login/user
+
+signup user : http://127.0.0.1:8000/signup/user
+
+signup doctor : http://127.0.0.1:8000/signup/doctor
+
+login doctor : http://127.0.0.1:8000/login/doctor
+
+get doctor : http://127.0.0.1:8000/get_doctor
+
+
+
+
